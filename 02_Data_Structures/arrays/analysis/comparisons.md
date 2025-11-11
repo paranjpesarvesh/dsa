@@ -1,6 +1,5 @@
 # 📄 Comparisons of Array Implementations and Alternatives
 
-**Path Context:** `dsa/02_Data_Structures/arrays/analysis/comparisons.md`
 This document focuses on **analyzing arrays**, their **variations**, **alternatives**, and **practical trade-offs** in different scenarios.
 
 ---
