@@ -99,7 +99,7 @@ Organizes problems by **common patterns and strategies**.
 
 ## Author
 
-- Maintainer: [Your Name]
+- Maintainer: Sarvesh Paranjpe
 - Purpose: Structured DSA learning & interview preparation
 
 ---
