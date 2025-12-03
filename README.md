@@ -10,9 +10,9 @@ This repository is organized to help you systematically learn DSA, implement sol
 ```
 
   01\_Fundamentals
-  02\_Data\_Structures
+  02\_Data_Structures
   03\_Algorithms
-  04\_Problem\_Patterns
+  04\_Problem_Patterns
 
 ```
 
