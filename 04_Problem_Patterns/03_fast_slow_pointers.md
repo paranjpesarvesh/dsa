@@ -74,7 +74,7 @@ Algorithm:
    fast = fast.next.next
 3. return slow
 
-````
+```
 
 ### 3.3 Detecting Repetition in Numbers (Floyd's Algorithm)
 
@@ -104,7 +104,7 @@ def has_cycle(head):
         if slow == fast:
             return True
     return False
-````
+```
 
 ### Find Cycle Start
 

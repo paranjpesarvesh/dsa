@@ -1,10 +1,10 @@
-# 📊 Worked Example 01 – Sum of Array Elements
+#  Worked Example 01 – Sum of Array Elements
 
 This example demonstrates how to analyze the **time and space complexity** of a simple array summation problem.
 
 ---
 
-## 🔹 Problem Statement
+##  Problem Statement
 
 Given an array of integers, compute the **sum of all elements**.
 
@@ -17,7 +17,7 @@ Output: 20
 
 ---
 
-## 🔹 Step-by-Step Reasoning
+##  Step-by-Step Reasoning
 
 1. We need to **visit each element** of the array exactly once.
 2. At each step, we add the current element to a running sum.
@@ -25,7 +25,7 @@ Output: 20
 
 ---
 
-## 🔹 Pseudocode
+##  Pseudocode
 
 ```text
 function sumArray(arr, n):
@@ -37,7 +37,7 @@ function sumArray(arr, n):
 
 ---
 
-## 🔹 Implementation Templates
+##  Implementation Templates
 
 ### C++
 
@@ -84,7 +84,7 @@ print("Sum =", sum_array(arr))
 
 ---
 
-## 🔹 Complexity Analysis
+##  Complexity Analysis
 
 | Operation                 | Cost                                           |
 | ------------------------- | ---------------------------------------------- |
@@ -96,7 +96,7 @@ print("Sum =", sum_array(arr))
 
 ---
 
-## 🔹 Variations
+##  Variations
 
 1. **Recursive Summation**
 
@@ -123,7 +123,7 @@ print("Sum =", sum_array(arr))
 
 ---
 
-## 🔹 Visual Aid
+##  Visual Aid
 
 Example Array: `[2, 4, 6, 8]`
 
@@ -137,7 +137,7 @@ Step 5: total = 12 + 8 = 20
 
 ---
 
-## 🔹 Interview Tips
+##  Interview Tips
 
 * Be prepared to discuss **iterative vs recursive approaches**.
 * Mention **tradeoffs**:
@@ -148,7 +148,7 @@ Step 5: total = 12 + 8 = 20
 
 ---
 
-## 🔹 Practice Problems
+##  Practice Problems
 
 * [LeetCode 1480 – Running Sum of 1D Array](https://leetcode.com/problems/running-sum-of-1d-array/)
 * [GFG – Sum of Array Elements](https://www.geeksforgeeks.org/sum-of-elements-in-an-array/)
@@ -156,6 +156,6 @@ Step 5: total = 12 + 8 = 20
 
 ---
 
-✅ This worked example shows how even a **basic problem** can be used to **teach complexity analysis, recursion, and variations**.
+ This worked example shows how even a **basic problem** can be used to **teach complexity analysis, recursion, and variations**.
 
 ---

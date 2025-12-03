@@ -109,7 +109,7 @@ function union(x, y):
 | `union`   | O(log n)                        | O(α(n))                                    |
 | Space     | O(n)                            | O(n)                                       |
 
-🔹 **α(n)** = Inverse Ackermann function, which grows so slowly it’s practically constant for all real-world inputs.
+ **α(n)** = Inverse Ackermann function, which grows so slowly it’s practically constant for all real-world inputs.
 
 ---
 
@@ -174,6 +174,6 @@ If rootX == rootY ? -----> Yes --> [Already in Same Set]
 
 ---
 
-✅ With these notes, you now understand **Union-Find (DSU)** thoroughly: from definitions, intuition, operations, and optimizations, to its role in real-world problems.
+ With these notes, you now understand **Union-Find (DSU)** thoroughly: from definitions, intuition, operations, and optimizations, to its role in real-world problems.
 
 ---

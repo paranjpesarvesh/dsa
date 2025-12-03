@@ -1,4 +1,4 @@
-# 📄 Comparisons of Array Implementations and Alternatives
+#  Comparisons of Array Implementations and Alternatives
 
 This document focuses on **analyzing arrays**, their **variations**, **alternatives**, and **practical trade-offs** in different scenarios.
 

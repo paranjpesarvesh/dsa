@@ -1,4 +1,4 @@
-# 🔢 Counting Bloom Filter (CBF)
+#  Counting Bloom Filter (CBF)
 
 A **Counting Bloom Filter (CBF)** is a **variant of the standard Bloom Filter** that supports **deletions** in addition to insertions and queries. It does this by replacing the bit array with an **array of small integer counters**.
 
@@ -6,7 +6,7 @@ This solves one of the major limitations of Bloom Filters: **inability to remove
 
 ---
 
-## ✅ Motivation
+##  Motivation
 
 * **Standard Bloom Filter**: Only supports `Insert` and `Query`. Deletion is impossible because clearing a bit might remove evidence of other elements that also mapped to that bit.
 * **Counting Bloom Filter**: Replaces each bit with a counter that increments on insert and decrements on delete. A bit is considered set if its counter > 0.
@@ -197,13 +197,13 @@ function delete(x):
 | --------------- | --------------------- | --------------------- |
 | Insert          | Yes                   | Yes                   |
 | Query           | Yes                   | Yes                   |
-| Delete          | ❌ No                  | ✅ Yes                 |
+| Delete          |  No                  |  Yes                 |
 | False Positives | Yes                   | Yes                   |
 | False Negatives | No                    | Possible (overflow)   |
 | Space per cell  | 1 bit                 | `b` bits (counter)    |
 
 ---
 
-🚀 **In short:** Counting Bloom Filters extend Bloom Filters to support deletions by using counters instead of bits. This enables dynamic workloads but comes with higher memory usage and risk of overflow.
+ **In short:** Counting Bloom Filters extend Bloom Filters to support deletions by using counters instead of bits. This enables dynamic workloads but comes with higher memory usage and risk of overflow.
 
 ---

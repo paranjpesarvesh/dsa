@@ -1,8 +1,8 @@
-# 🔗 Similar String Groups using Disjoint Set (Union-Find)
+#  Similar String Groups using Disjoint Set (Union-Find)
 
 ---
 
-## 📌 Introduction
+##  Introduction
 
 The **Similar String Groups** problem is a classic **graph-connected-components** problem, efficiently solved using **Disjoint Set (Union-Find, DSU)**.
 
@@ -26,7 +26,7 @@ Group 2: ["star"]
 
 ---
 
-## 📌 Mathematical Intuition
+##  Mathematical Intuition
 
 1. Treat each string as a **node** in a graph.
 2. An **edge exists** between two nodes if the strings are similar.
@@ -36,7 +36,7 @@ Group 2: ["star"]
 
 ---
 
-## 📌 Step-by-Step Reasoning
+##  Step-by-Step Reasoning
 
 1. Initialize DSU for all strings (`0` to `N-1`).
 2. Compare every pair of strings:
@@ -50,7 +50,7 @@ Group 2: ["star"]
 
 ---
 
-## 📌 Pseudocode
+##  Pseudocode
 
 ```
 function numSimilarGroups(strs):
@@ -78,7 +78,7 @@ function areSimilar(s1, s2):
 
 ---
 
-## 📌 Complexity Analysis
+##  Complexity Analysis
 
 | Operation            | Complexity                       |
 | -------------------- | -------------------------------- |
@@ -92,7 +92,7 @@ function areSimilar(s1, s2):
 
 ---
 
-## 📌 ASCII Visualization
+##  ASCII Visualization
 
 ```
 Strings: ["tars","rats","arts","star"]
@@ -110,7 +110,7 @@ Number of groups = 2
 
 ---
 
-## 📌 Variations & Edge Cases
+##  Variations & Edge Cases
 
 * **All strings identical:** 1 group.
 * **All strings completely different:** N groups.
@@ -119,7 +119,7 @@ Number of groups = 2
 
 ---
 
-## 📌 Interview Tips
+##  Interview Tips
 
 * Use **DSU** for connected components problems.
 * Pairwise comparison is acceptable for small N (≤ 300).
@@ -129,7 +129,7 @@ Number of groups = 2
 
 ---
 
-## 📌 Practice Problems
+##  Practice Problems
 
 * [LeetCode 839 – Similar String Groups](https://leetcode.com/problems/similar-string-groups/)
 * [GFG – Number of Similar Groups](https://www.geeksforgeeks.org/similar-string-groups/)
@@ -137,7 +137,7 @@ Number of groups = 2
 
 ---
 
-✅ **Summary:**
+ **Summary:**
 The Similar String Groups problem showcases **DSU for dynamic connectivity** in string graphs. Key ideas:
 
 1. Represent strings as nodes.

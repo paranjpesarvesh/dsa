@@ -117,15 +117,15 @@ Finding *all* solutions always requires exponential time.
 
 ## **7. Variations**
 
-### **✓ Count Solutions Only (no board output)**
+### ** Count Solutions Only (no board output)**
 
 Track counter instead of storing configurations.
 
-### **✓ Print Only First Configuration**
+### ** Print Only First Configuration**
 
 Break early when first valid board is found.
 
-### **✓ Generalized N-Rooks / N-Bishops**
+### ** Generalized N-Rooks / N-Bishops**
 
 Remove diagonal constraints etc.
 

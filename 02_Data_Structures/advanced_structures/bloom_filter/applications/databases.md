@@ -1,20 +1,20 @@
-# 🗄️ Bloom Filters in Databases
+#  Bloom Filters in Databases
 
-## 1. 🌱 Introduction
+## 1.  Introduction
 
 Databases handle **billions of records** and must answer queries quickly.
 Bloom Filters provide a **fast, space-efficient way to avoid unnecessary lookups**.
 
-👉 Instead of scanning the disk or checking indexes directly, a Bloom Filter acts as a **first-level filter**:
+ Instead of scanning the disk or checking indexes directly, a Bloom Filter acts as a **first-level filter**:
 
 * If it says *“definitely not present”* → skip disk lookup.
 * If it says *“possibly present”* → perform the actual lookup.
 
-⚡ This drastically reduces expensive **I/O operations**.
+ This drastically reduces expensive **I/O operations**.
 
 ---
 
-## 2. 📊 Why Bloom Filters in Databases?
+## 2.  Why Bloom Filters in Databases?
 
 * **Disk lookups** are much slower than memory lookups.
 * Bloom Filters minimize **false negatives** (never wrongly exclude a valid entry).
@@ -22,7 +22,7 @@ Bloom Filters provide a **fast, space-efficient way to avoid unnecessary lookups
 
 ---
 
-## 3. 🔍 Key Applications in Databases
+## 3.  Key Applications in Databases
 
 ### 3.1 Indexing & Query Optimization
 
@@ -58,7 +58,7 @@ Query "WHERE id = 1234"
    --> Used to filter Table B before join
 ```
 
-👉 Reduces data shuffled across nodes.
+ Reduces data shuffled across nodes.
 
 ---
 
@@ -76,7 +76,7 @@ Query "WHERE id = 1234"
 
 ---
 
-## 4. ⚖️ Complexity Benefits
+## 4.  Complexity Benefits
 
 * **Without Bloom Filter**: Each query may trigger a disk lookup (O(disk)).
 * **With Bloom Filter**:
@@ -87,7 +87,7 @@ Query "WHERE id = 1234"
 
 ---
 
-## 5. 📈 Trade-offs
+## 5.  Trade-offs
 
 * **Space**: Needs extra memory for Bloom Filters (but small compared to DB size).
 * **False positives**: Some unnecessary lookups still happen.
@@ -106,7 +106,7 @@ Query "WHERE id = 1234"
 
 ---
 
-## 7. 📝 Practice & References
+## 7.  Practice & References
 
 * [GFG – Applications of Bloom Filters](https://www.geeksforgeeks.org/applications-of-bloom-filters/)
 * [Apache Cassandra – Bloom Filters](https://cassandra.apache.org/doc/latest/architecture/storage_engine.html#bloom-filters)

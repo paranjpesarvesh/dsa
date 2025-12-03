@@ -72,7 +72,7 @@ shellSort(arr):
 
 Space = **O(1)** (in-place)
 
-**Stable?** ❌ No
+**Stable?**  No
 Reason: Swapping across gaps disturbs relative order.
 
 ---

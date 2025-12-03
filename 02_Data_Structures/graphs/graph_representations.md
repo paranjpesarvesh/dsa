@@ -148,8 +148,8 @@ Edge List:
 | Space                  | O(V^2)           | O(V + E)       | O(E)      |
 | Edge lookup            | O(1)             | O(degree)      | O(E)      |
 | Iterate neighbors      | O(V)             | O(degree)      | O(E)      |
-| Good for dense graphs  | ✅                | ❌              | ❌         |
-| Good for sparse graphs | ❌                | ✅              | ✅         |
+| Good for dense graphs  |                 |               |          |
+| Good for sparse graphs |                 |               |          |
 
 ---
 

@@ -66,7 +66,7 @@ selectionSort(arr):
 
 Space = **O(1)** (in-place)
 
-**Stable?** ❌ No
+**Stable?**  No
 Why?
 Swapping can change the relative order of equal elements.
 
@@ -94,13 +94,13 @@ Repeat until array sorted
 
 ## **7. Advantages & Disadvantages**
 
-### ✔ Advantages
+###  Advantages
 
 * Simple to implement
 * Performs well on small arrays
 * Minimal number of swaps
 
-### ✘ Disadvantages
+###  Disadvantages
 
 * Always O(n²) comparisons
 * Not stable

@@ -1,4 +1,4 @@
-# 📘 Recursive Complexity Analysis
+#  Recursive Complexity Analysis
 
 Recursion is one of the **most powerful problem-solving paradigms** in computer science.
 But analyzing recursive functions often requires a systematic method.
@@ -6,7 +6,7 @@ This document explains **recursive complexity analysis**, step-by-step, with too
 
 ---
 
-## 🔹 1. Basics of Recursive Complexity
+##  1. Basics of Recursive Complexity
 
 A recursive algorithm solves a problem by breaking it into **smaller subproblems**.
 
@@ -22,9 +22,9 @@ T(n) = a · T(n/b) + f(n)
 
 ---
 
-## 🔹 2. Methods of Analysis
+##  2. Methods of Analysis
 
-### 📍 Method 1: Substitution (Expansion)
+###  Method 1: Substitution (Expansion)
 
 * Expand recurrence step-by-step until reaching base case.
 * Useful for small/simple recursions.
@@ -39,7 +39,7 @@ Expands into an exponential tree → $O(2^n)$.
 
 ---
 
-### 📍 Method 2: Recursion Tree
+###  Method 2: Recursion Tree
 
 * Draw a tree showing recursive calls.
 * Each **level** = work done per recursive step.
@@ -66,11 +66,11 @@ At each level, total cost = `n`.
 Height = `log n`.
 Total cost = `n log n`.
 
-✅ Complexity = **Θ(n log n)**
+ Complexity = **Θ(n log n)**
 
 ---
 
-### 📍 Method 3: Master Theorem
+###  Method 3: Master Theorem
 
 For recurrence:
 
@@ -86,7 +86,7 @@ Compare `f(n)` with $n^{\log_b a}$:
 
 ---
 
-## 🔹 3. Classic Examples
+##  3. Classic Examples
 
 ### Example 1: Binary Search
 
@@ -98,7 +98,7 @@ $$
 * $n^{\log_2 1} = n^0 = 1$
 * Matches Case 2 of Master Theorem.
 
-✅ **T(n) = Θ(log n)**
+ **T(n) = Θ(log n)**
 
 ---
 
@@ -112,7 +112,7 @@ $$
 * $n^{\log_2 2} = n^1 = n$
 * Matches Case 2.
 
-✅ **T(n) = Θ(n log n)**
+ **T(n) = Θ(n log n)**
 
 ---
 
@@ -134,11 +134,11 @@ $$
 T(n) = 2^n - 1
 $$
 
-✅ **Exponential: Θ(2^n)**
+ **Exponential: Θ(2^n)**
 
 ---
 
-## 🔹 4. Visual Aid: Common Recurrence Growth
+##  4. Visual Aid: Common Recurrence Growth
 
 ```
 Recurrence                  Complexity
@@ -152,7 +152,7 @@ T(n) = 2T(n-1) + O(1)       O(2^n)        (Tower of Hanoi)
 
 ---
 
-## 🔹 5. Edge Cases & Pitfalls
+##  5. Edge Cases & Pitfalls
 
 * Not all recursions fit Master Theorem (e.g., Fibonacci).
 * Must check **base cases** when solving recurrences.
@@ -162,7 +162,7 @@ T(n) = 2T(n-1) + O(1)       O(2^n)        (Tower of Hanoi)
 
 ---
 
-## 🔹 6. Interview Tips
+##  6. Interview Tips
 
 * Be ready to **write recurrence relations** for recursive code.
 * Most asked recurrences:
@@ -177,7 +177,7 @@ T(n) = 2T(n-1) + O(1)       O(2^n)        (Tower of Hanoi)
 
 ---
 
-## 🔹 7. Practice Problems
+##  7. Practice Problems
 
 * [LeetCode 509 – Fibonacci Number](https://leetcode.com/problems/fibonacci-number/)
 * [LeetCode 169 – Majority Element (Divide & Conquer)](https://leetcode.com/problems/majority-element/)
@@ -186,7 +186,7 @@ T(n) = 2T(n-1) + O(1)       O(2^n)        (Tower of Hanoi)
 
 ---
 
-✅ **Key Takeaway:**
+ **Key Takeaway:**
 Recursive complexity is usually solved via **recurrence relations**.
 The **Master Theorem** is your go-to tool for divide-and-conquer recurrences, while **recursion trees** and **substitution** help in other cases.
 

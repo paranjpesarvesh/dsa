@@ -1,33 +1,33 @@
-# 🌐 Bloom Filters in Web Caching
+#  Bloom Filters in Web Caching
 
-## 1. 🚀 Introduction
+## 1.  Introduction
 
 Web caching is a **performance optimization technique** used in browsers, CDNs (Content Delivery Networks), and proxy servers to reduce latency and bandwidth consumption.
 
-👉 **Challenge**:
+ **Challenge**:
 
 * Cache lookup should be **fast**.
 * Cache size is limited → need efficient use of memory.
 * Missed cache lookups (cache misses) waste time.
 
-✅ Bloom Filters help by providing a **fast membership test** to check if a requested item (URL, file, or object) *might* be in the cache before performing expensive lookups.
+ Bloom Filters help by providing a **fast membership test** to check if a requested item (URL, file, or object) *might* be in the cache before performing expensive lookups.
 
 ---
 
-## 2. 🌍 Why Bloom Filters in Caching?
+## 2.  Why Bloom Filters in Caching?
 
 * **Fast membership check** (O(1)).
 * **Memory efficiency** (store cache indices compactly).
 * **Reduces unnecessary cache lookups** → saves disk I/O or network requests.
 
-⚖️ Trade-off:
+ Trade-off:
 
 * False positives → sometimes Bloom Filter may say "present" when not.
 * False negatives → **not possible** (safe guarantee).
 
 ---
 
-## 3. 🔐 Applications in Web Caching
+## 3.  Applications in Web Caching
 
 ### 3.1 Browser Caches
 
@@ -54,7 +54,7 @@ Web caching is a **performance optimization technique** used in browsers, CDNs (
 
 ---
 
-## 4. 🔢 Mathematical Intuition
+## 4.  Mathematical Intuition
 
 If:
 
@@ -68,23 +68,23 @@ The false positive probability (FPP) is:
 FPP ≈ (1 - e^(-kn/m))^k
 ```
 
-👉 For caching systems, designers typically aim for **FPP < 1%** to balance speed and accuracy.
+ For caching systems, designers typically aim for **FPP < 1%** to balance speed and accuracy.
 
 ---
 
-## 5. ⚖️ Complexity Analysis
+## 5.  Complexity Analysis
 
 * **Insertion**: O(k)
 * **Query**: O(k)
 * **Space**: O(m) bits
 
-💡 Compared to storing indices in a hash set:
+ Compared to storing indices in a hash set:
 
 * Bloom Filters save **\~80–90% space** at the cost of a small FPP.
 
 ---
 
-## 6. 📊 Visual Representation
+## 6.  Visual Representation
 
 ### Cache Lookup with Bloom Filter
 
@@ -110,7 +110,7 @@ Incoming Request → Bloom Filter check
 
 ---
 
-## 7. 🧑‍💻 Pseudocode for Cache Lookup
+## 7. 🧑 Pseudocode for Cache Lookup
 
 ```pseudo
 Initialize BloomFilter(m, k)
@@ -142,7 +142,7 @@ function checkCache(item):
 
 ---
 
-## 9. 📚 Practice Problems
+## 9.  Practice Problems
 
 * [GFG – Applications of Bloom Filter in Caching](https://www.geeksforgeeks.org/applications-of-bloom-filters/)
 * [LeetCode 460 – LFU Cache](https://leetcode.com/problems/lfu-cache/) (not Bloom Filter, but caching logic).
@@ -150,7 +150,7 @@ function checkCache(item):
 
 ---
 
-## 10. 📖 References
+## 10.  References
 
 * Broder & Mitzenmacher, *Network Applications of Bloom Filters*.
 * Akamai & Cloudflare research on CDN optimization with Bloom Filters.
@@ -158,6 +158,6 @@ function checkCache(item):
 
 ---
 
-✅ This document explains **how Bloom Filters optimize caching systems**, with **math, diagrams, pseudocode, and interview guidance**.
+ This document explains **how Bloom Filters optimize caching systems**, with **math, diagrams, pseudocode, and interview guidance**.
 
 ---

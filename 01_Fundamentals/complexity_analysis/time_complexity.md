@@ -1,13 +1,13 @@
-# ⏱️ Time Complexity in Algorithms
+# ⏱ Time Complexity in Algorithms
 
 ---
 
-## 🔹 1. What is Time Complexity?
+##  1. What is Time Complexity?
 
 **Time Complexity** is a function that describes how the **running time of an algorithm grows** with respect to the size of the input `n`.
 
 It helps us answer:
-👉 *“How does the execution time scale as input grows?”*
+ *“How does the execution time scale as input grows?”*
 
 $$
 T(n) = f(n)
@@ -20,7 +20,7 @@ Where:
 
 ---
 
-## 🔹 2. Why Do We Use Asymptotic Notation?
+##  2. Why Do We Use Asymptotic Notation?
 
 Since actual execution time depends on hardware, compiler, and system load → we abstract it using **asymptotic notations**:
 
@@ -33,7 +33,7 @@ Binary Search → `O(log n)`, `Ω(1)`, `Θ(log n)`.
 
 ---
 
-## 🔹 3. Step Counting Method
+##  3. Step Counting Method
 
 ### Example: Sum of Array
 
@@ -58,7 +58,7 @@ $$
 
 ---
 
-## 🔹 4. Common Time Complexities
+##  4. Common Time Complexities
 
 | Complexity     | Example Algorithm              | Growth Trend          |
 | -------------- | ------------------------------ | --------------------- |
@@ -70,7 +70,7 @@ $$
 | **O(2ⁿ)**      | Recursive Fibonacci            | Exponential           |
 | **O(n!)**      | Traveling Salesman brute force | Factorial growth      |
 
-📊 Growth visualization:
+ Growth visualization:
 
 ```
 O(1) < O(log n) < O(n) < O(n log n) < O(n^2) < O(2^n) < O(n!)
@@ -78,7 +78,7 @@ O(1) < O(log n) < O(n) < O(n log n) < O(n^2) < O(2^n) < O(n!)
 
 ---
 
-## 🔹 5. Case Analysis
+##  5. Case Analysis
 
 ### Example: Binary Search
 
@@ -88,7 +88,7 @@ O(1) < O(log n) < O(n) < O(n log n) < O(n^2) < O(2^n) < O(n!)
 
 ---
 
-## 🔹 6. Nested Loops
+##  6. Nested Loops
 
 ```cpp
 for (int i = 0; i < n; i++) {       // O(n)
@@ -104,7 +104,7 @@ $$
 
 ---
 
-## 🔹 7. Logarithmic Complexity (Intuition)
+##  7. Logarithmic Complexity (Intuition)
 
 Each iteration **shrinks the problem size** by a factor (commonly 2).
 
@@ -113,7 +113,7 @@ Each iteration **shrinks the problem size** by a factor (commonly 2).
 
 ---
 
-## 🔹 8. Recurrence Relations
+##  8. Recurrence Relations
 
 For recursive algorithms, we analyze time using **recurrence equations**.
 
@@ -131,7 +131,7 @@ $$
 
 ---
 
-## 🔹 9. Visual Aid
+##  9. Visual Aid
 
 ### Growth Rate Graph (ASCII Approximation)
 
@@ -151,7 +151,7 @@ n!
 
 ---
 
-## 🔹 10. Variations & Edge Cases
+##  10. Variations & Edge Cases
 
 * **Sparse input vs dense input** can change complexity.
 * **Best-case optimizations** → e.g., Bubble Sort stops early if sorted.
@@ -159,7 +159,7 @@ n!
 
 ---
 
-## 🔹 11. Interview Tips
+##  11. Interview Tips
 
 * Always state **best, worst, average cases**.
 * Be ready to **derive complexity** by counting steps.
@@ -169,7 +169,7 @@ n!
 
 ---
 
-## 🔹 12. Practice Problems
+##  12. Practice Problems
 
 * [LeetCode 704 – Binary Search](https://leetcode.com/problems/binary-search/)
 * [LeetCode 53 – Maximum Subarray (Kadane’s Algo, O(n))](https://leetcode.com/problems/maximum-subarray/)
@@ -178,7 +178,7 @@ n!
 
 ---
 
-✅ **Key Takeaway:**
+ **Key Takeaway:**
 Time complexity gives a **mathematical framework** to evaluate efficiency.
 Mastering it requires **case analysis, recurrence solving, and recognizing common patterns**.
 

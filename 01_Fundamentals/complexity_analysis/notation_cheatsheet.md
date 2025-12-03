@@ -1,11 +1,11 @@
-# 📘 Complexity Notation Cheatsheet
+#  Complexity Notation Cheatsheet
 
 Understanding **complexity notations** is fundamental for algorithm analysis.
 This cheatsheet provides **definitions, intuition, visual aids, and comparisons** for the most common asymptotic notations.
 
 ---
 
-## 🔹 Why Do We Need Notation?
+##  Why Do We Need Notation?
 
 When analyzing algorithms, exact runtime (like `3n² + 2n + 7`) is **too detailed**.
 We only care about how the algorithm **scales with input size $n$**.
@@ -14,7 +14,7 @@ Asymptotic notation provides a **mathematical shorthand** for growth rates.
 
 ---
 
-## 🔹 Common Notations
+##  Common Notations
 
 ### 1. **Big-O (O) — Upper Bound**
 
@@ -27,7 +27,7 @@ $$
 f(n) = O(g(n)) \quad \text{if} \quad \exists \, c, n_0 \, : \, f(n) \leq c \cdot g(n) \quad \forall n \geq n_0
 $$
 
-✅ Guarantees performance will **not exceed** this bound.
+ Guarantees performance will **not exceed** this bound.
 
 **Example:** Insertion sort = $O(n^2)$.
 
@@ -89,7 +89,7 @@ $n^2 = \omega(n)$.
 
 ---
 
-## 🔹 Visual Aid: Growth Comparison
+##  Visual Aid: Growth Comparison
 
 ```
 Growth Rates (as n → ∞):
@@ -113,7 +113,7 @@ ASCII chart:
 
 ---
 
-## 🔹 Summary Table
+##  Summary Table
 
 | Notation | Meaning            | Bound Type | Example                |
 | -------- | ------------------ | ---------- | ---------------------- |
@@ -125,7 +125,7 @@ ASCII chart:
 
 ---
 
-## 🔹 Interview Tips
+##  Interview Tips
 
 * FAANG interviews typically ask:
 
@@ -137,7 +137,7 @@ ASCII chart:
 
 ---
 
-## 🔹 Practice Problems
+##  Practice Problems
 
 * [GFG – Asymptotic Notations](https://www.geeksforgeeks.org/analysis-of-algorithms-asymptotic-analysis/)
 * [LeetCode Discuss – Time Complexity of Algorithms](https://leetcode.com/discuss/general-discussion/105039/time-complexity-of-common-leetcode-problems)
@@ -145,7 +145,7 @@ ASCII chart:
 
 ---
 
-✅ **Key Takeaway:**
+ **Key Takeaway:**
 Asymptotic notations abstract away constants and lower-order terms, letting us focus on **scalability** of algorithms.
 
 ---

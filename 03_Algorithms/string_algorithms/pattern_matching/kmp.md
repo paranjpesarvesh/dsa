@@ -144,9 +144,9 @@ kmp(text, pattern):
 
 * Most asked pattern-matching algorithm in interviews.
 * Be ready to explain:
-  ✔ Why LPS avoids re-checking characters
-  ✔ How mismatch handling works
-  ✔ Build LPS manually for small pattern
+   Why LPS avoids re-checking characters
+   How mismatch handling works
+   Build LPS manually for small pattern
 * Frequently compared with Rabin-Karp.
 
 ---

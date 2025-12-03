@@ -1,8 +1,8 @@
-# 🌳 Kruskal's Minimum Spanning Tree (MST) using Disjoint Set Union (DSU)
+#  Kruskal's Minimum Spanning Tree (MST) using Disjoint Set Union (DSU)
 
 ---
 
-## 📌 Introduction
+##  Introduction
 
 Kruskal's algorithm is a **greedy method** to find the **Minimum Spanning Tree (MST)** of a connected, weighted, undirected graph.
 
@@ -11,7 +11,7 @@ Kruskal's algorithm is a **greedy method** to find the **Minimum Spanning Tree (
 
 ---
 
-## 📌 Intuition
+##  Intuition
 
 1. Sort all edges by **weight in ascending order**.
 2. Iterate through edges and attempt to **add them to MST**.
@@ -25,7 +25,7 @@ This ensures MST is **cycle-free** and of **minimal total weight**.
 
 ---
 
-## 📌 Step-by-Step Example
+##  Step-by-Step Example
 
 Graph with edges:
 
@@ -52,12 +52,12 @@ Graph with edges:
 3. `(1,2)` → find(1)==find(2) → cycle, skip
 4. `(2,3)` → add to MST, union(2,3)
 
-✅ MST edges: `(0,1), (0,2), (2,3)`
-✅ Total weight = 1 + 2 + 4 = 7
+ MST edges: `(0,1), (0,2), (2,3)`
+ Total weight = 1 + 2 + 4 = 7
 
 ---
 
-## 📌 Pseudocode
+##  Pseudocode
 
 ```
 function KruskalMST(edges, n):
@@ -77,7 +77,7 @@ function KruskalMST(edges, n):
 
 ---
 
-## 📌 Complexity Analysis
+##  Complexity Analysis
 
 | Operation      | Complexity                                |
 | -------------- | ----------------------------------------- |
@@ -88,7 +88,7 @@ function KruskalMST(edges, n):
 
 ---
 
-## 📌 ASCII Visualization
+##  ASCII Visualization
 
 ```
 Vertices: 0  1  2  3
@@ -114,7 +114,7 @@ Step 4: Add (2-3)
 
 ---
 
-## 📌 Variations & Edge Cases
+##  Variations & Edge Cases
 
 * **Disconnected Graph** → Kruskal builds **Minimum Spanning Forest**.
 * **Multiple edges with same weight** → can result in multiple valid MSTs.
@@ -122,7 +122,7 @@ Step 4: Add (2-3)
 
 ---
 
-## 📌 Interview Tips
+##  Interview Tips
 
 * FAANG and competitive programming often test **Kruskal MST + DSU**.
 * Remember **DSU optimizations**: path compression + union by rank.
@@ -133,7 +133,7 @@ Step 4: Add (2-3)
 
 ---
 
-## 📌 Practice Problems
+##  Practice Problems
 
 * [GFG – Kruskal's Minimum Spanning Tree](https://www.geeksforgeeks.org/kruskals-minimum-spanning-tree-algorithm-greedy-algo-2/)
 * [LeetCode 1135 – Connecting Cities With Minimum Cost](https://leetcode.com/problems/connecting-cities-with-minimum-cost/)

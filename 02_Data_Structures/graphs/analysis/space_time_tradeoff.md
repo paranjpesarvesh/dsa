@@ -43,8 +43,8 @@ Adjacency List:
 | Add edge            | O(1)           | O(V + E)       |
 | Iterate neighbors   | O(degree(u))   | O(V + E)       |
 
-> ✅ Space-efficient for sparse graphs
-> ❌ Edge lookup is slower for dense graphs
+>  Space-efficient for sparse graphs
+>  Edge lookup is slower for dense graphs
 
 ---
 
@@ -72,8 +72,8 @@ Adjacency Matrix:
 | Add/remove edge     | O(1)           | O(V^2)         |
 | Iterate neighbors   | O(V)           | O(V^2)         |
 
-> ✅ Fast edge lookup
-> ❌ Space-heavy for sparse graphs
+>  Fast edge lookup
+>  Space-heavy for sparse graphs
 
 ---
 
@@ -133,16 +133,16 @@ Adjacency Matrix:
 ## 4. Visual Summary
 
 Sparse Graphs:
-Adjacency List  ✅  | Adjacency Matrix ❌
+Adjacency List    | Adjacency Matrix 
 
 Dense Graphs:
-Adjacency Matrix ✅  | Adjacency List ❌
+Adjacency Matrix   | Adjacency List 
 
 Edge Lookup:
-Matrix O(1) ✅ | List O(degree(u)) ❌
+Matrix O(1)  | List O(degree(u)) 
 
 Neighbor Iteration:
-List O(degree(u)) ✅ | Matrix O(V) ❌
+List O(degree(u))  | Matrix O(V) 
 
 ---
 

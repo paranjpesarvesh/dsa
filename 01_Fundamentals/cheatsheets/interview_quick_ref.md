@@ -1,10 +1,10 @@
-# 🚀 Interview Quick Reference (DSA)
+#  Interview Quick Reference (DSA)
 
 This **quick reference guide** is designed for **last-minute interview prep**. It condenses the most important **concepts, patterns, and must-know complexities** you should recall during a FAANG/GATE interview.
 
 ---
 
-## 🔹 1. Complexity Cheat Table
+##  1. Complexity Cheat Table
 
 | Complexity | Name         | Examples                           |
 | ---------- | ------------ | ---------------------------------- |
@@ -18,7 +18,7 @@ This **quick reference guide** is designed for **last-minute interview prep**. I
 
 ---
 
-## 🔹 2. Common Problem-Solving Patterns
+##  2. Common Problem-Solving Patterns
 
 ### Two Pointers
 
@@ -51,7 +51,7 @@ This **quick reference guide** is designed for **last-minute interview prep**. I
 
 ---
 
-## 🔹 3. Must-Know Data Structures
+##  3. Must-Know Data Structures
 
 | Structure        | Operations (avg)         | Usage in Interviews          |
 | ---------------- | ------------------------ | ---------------------------- |
@@ -67,7 +67,7 @@ This **quick reference guide** is designed for **last-minute interview prep**. I
 
 ---
 
-## 🔹 4. Recurrence Mastery
+##  4. Recurrence Mastery
 
 * **Binary Search**: T(n) = T(n/2) + O(1) → O(log n)
 * **Merge Sort**: T(n) = 2T(n/2) + O(n) → O(n log n)
@@ -76,7 +76,7 @@ This **quick reference guide** is designed for **last-minute interview prep**. I
 
 ---
 
-## 🔹 5. Graph Algorithms at a Glance
+##  5. Graph Algorithms at a Glance
 
 | Algorithm        | Complexity | Usage                     |
 | ---------------- | ---------- | ------------------------- |
@@ -90,7 +90,7 @@ This **quick reference guide** is designed for **last-minute interview prep**. I
 
 ---
 
-## 🔹 6. Quick Interview Pseudocode Templates
+##  6. Quick Interview Pseudocode Templates
 
 ### Binary Search
 
@@ -126,7 +126,7 @@ while (!q.empty()) {
 
 ---
 
-## 🔹 7. Interview Tips
+##  7. Interview Tips
 
 * **FAANG**: Focus on **patterns** (sliding window, two pointers, hashing, graphs, DP).
 * **GATE**: Expect theory-heavy (recurrences, asymptotic analysis, data structure internals).
@@ -135,7 +135,7 @@ while (!q.empty()) {
 
 ---
 
-## 🔹 8. High-Yield Practice Lists
+##  8. High-Yield Practice Lists
 
 * **LeetCode Blind 75** → Covers most interview patterns.
 * **NeetCode 150** → Categorized learning path.

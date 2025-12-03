@@ -1,10 +1,10 @@
-# 🔄 Worked Example 03 – Merge Sort
+#  Worked Example 03 – Merge Sort
 
 This example demonstrates **Merge Sort**, a classic **divide-and-conquer sorting algorithm**, and analyzes its **time and space complexity** in detail.
 
 ---
 
-## 🔹 Problem Statement
+##  Problem Statement
 
 Given an array of integers, **sort it in ascending order** using Merge Sort.
 
@@ -17,7 +17,7 @@ Output: [3, 9, 10, 27, 38, 43, 82]
 
 ---
 
-## 🔹 Step-by-Step Reasoning
+##  Step-by-Step Reasoning
 
 1. **Divide:** Split the array into two halves.
 2. **Conquer:** Recursively sort both halves.
@@ -27,7 +27,7 @@ Merge Sort is **stable** (does not change relative order of equal elements) and 
 
 ---
 
-## 🔹 Pseudocode
+##  Pseudocode
 
 ```text
 function mergeSort(arr):
@@ -53,7 +53,7 @@ function merge(left, right):
 
 ---
 
-## 🔹 Implementation Templates
+##  Implementation Templates
 
 ### C++
 
@@ -133,7 +133,7 @@ print("Sorted Array:", merge_sort(arr))
 
 ---
 
-## 🔹 Complexity Analysis
+##  Complexity Analysis
 
 | Aspect                    | Complexity                            |
 | ------------------------- | ------------------------------------- |
@@ -147,7 +147,7 @@ print("Sorted Array:", merge_sort(arr))
 
 ---
 
-## 🔹 Variations
+##  Variations
 
 1. **Bottom-up merge sort (iterative)**
 2. **In-place merge sort** (complex, avoids extra memory)
@@ -155,7 +155,7 @@ print("Sorted Array:", merge_sort(arr))
 
 ---
 
-## 🔹 Visual Aid
+##  Visual Aid
 
 Array before sorting: `[38, 27, 43, 3, 9, 82, 10]`
 
@@ -175,7 +175,7 @@ Final Merge:
 
 ---
 
-## 🔹 Interview Tips
+##  Interview Tips
 
 * FAANG interviewers often **expect O(n log n) sorting without using library functions**.
 * Know **stability**, **in-place vs out-of-place**, and **divide-and-conquer principles**.
@@ -183,7 +183,7 @@ Final Merge:
 
 ---
 
-## 🔹 Practice Problems
+##  Practice Problems
 
 * [LeetCode 912 – Sort an Array](https://leetcode.com/problems/sort-an-array/)
 * [GFG – Merge Sort](https://www.geeksforgeeks.org/merge-sort/)
@@ -191,6 +191,6 @@ Final Merge:
 
 ---
 
-✅ This worked example demonstrates **divide & conquer**, recursion, and **complexity analysis** using a standard sorting problem.
+ This worked example demonstrates **divide & conquer**, recursion, and **complexity analysis** using a standard sorting problem.
 
 ---

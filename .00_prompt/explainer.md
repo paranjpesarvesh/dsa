@@ -28,7 +28,7 @@
 >     * Complexity analysis inside comments.
 >     * Variations or alternate implementations (if relevant).
 >
-> ⚡ Additional Rules:
+>  Additional Rules:
 >
 > * Keep responses **well-formatted for markdown** (no broken formatting).
 > * Always **adapt content to the exact file path context** (e.g., if file path is under `03_Algorithms/dynamic_programming/`, focus on DP).

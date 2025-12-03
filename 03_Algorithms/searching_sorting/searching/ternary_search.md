@@ -38,13 +38,13 @@ l ---- m1 ---- m2 ---- r
 
 ## **3. When to Use Ternary Search?**
 
-### ✔ Best suited for:
+###  Best suited for:
 
 * **Unimodal arrays** (find max/min)
 * **Optimization problems**
 * **Continuous functions** (search over real values)
 
-### ✘ Not suited for:
+###  Not suited for:
 
 * Unsorted or normally sorted arrays (use binary search)
 

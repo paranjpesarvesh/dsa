@@ -69,7 +69,7 @@ for i in 1 to len(intervals)-1:
 return merged
 ```
 
-````
+```
 
 ---
 
@@ -101,7 +101,7 @@ def merge_intervals(intervals):
             last[1] = max(last[1], current[1])  # Merge intervals
 
     return merged
-````
+```
 
 ---
 

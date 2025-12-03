@@ -9,12 +9,11 @@ This repository is organized to help you systematically learn DSA, implement sol
 
 ```
 
- 00\_prompt
- 01\_Fundamentals
- 02\_Data\_Structures
- 03\_Algorithms
- 04\_Problem\_Patterns
- Leetcode
+  00\_prompt
+  01\_Fundamentals
+  02\_Data\_Structures
+  03\_Algorithms
+  04\_Problem\_Patterns
 
 ```
 
@@ -91,27 +90,12 @@ Organizes problems by **common patterns and strategies**.
 
 ---
 
-### Leetcode
-A curated collection of **LeetCode problem solutions**.
-- Organized by difficulty or topic:
-  - Arrays, Strings, Linked Lists
-  - Trees, Graphs, DP
-  - Math & Bit manipulation
-- Each solution includes:
-  - Problem link
-  - Well-commented code
-  - Time & space analysis
-  - Alternative approaches (if applicable)
-
----
-
 ## Recommended Usage
 
 1. Start with `01_Fundamentals` to build strong foundations.
 2. Explore `02_Data_Structures` and implement each structure.
 3. Move to `03_Algorithms` for algorithmic paradigms.
 4. Solve problems in `04_Problem_Patterns` to identify recurring strategies.
-5. Practice and validate solutions with `Leetcode` problems.
 
 ---
 

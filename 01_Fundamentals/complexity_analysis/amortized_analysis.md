@@ -1,17 +1,17 @@
-# ⚖️ Amortized Analysis in Complexity Theory
+#  Amortized Analysis in Complexity Theory
 
 ---
 
-## 🔹 Introduction
+##  Introduction
 
 In **complexity analysis**, we usually compute the **worst-case running time** of an operation.
 However, some operations are **occasionally expensive**, but most of the time **cheap**.
 
-➡️ **Amortized Analysis** helps us calculate the **average cost per operation** over a **sequence of operations**, guaranteeing that the average cost is small, even if some operations are costly.
+ **Amortized Analysis** helps us calculate the **average cost per operation** over a **sequence of operations**, guaranteeing that the average cost is small, even if some operations are costly.
 
 ---
 
-## 🔹 Real-Life Analogy
+##  Real-Life Analogy
 
 Imagine you buy a metro card for 30 rides at once.
 
@@ -27,7 +27,7 @@ This is the essence of amortized analysis.
 
 ---
 
-## 🔹 Formal Definition
+##  Formal Definition
 
 > **Amortized Analysis**: A technique to determine the **average running time per operation** over a sequence of operations, ensuring a bound **better than the naive worst-case per operation**.
 
@@ -36,7 +36,7 @@ It is a **deterministic guarantee**.
 
 ---
 
-## 🔹 Methods of Amortized Analysis
+##  Methods of Amortized Analysis
 
 ### 1. **Aggregate Method**
 
@@ -68,7 +68,7 @@ It is a **deterministic guarantee**.
 
 ---
 
-## 🔹 Classic Examples
+##  Classic Examples
 
 ### Example 1: **Dynamic Array Expansion**
 
@@ -89,7 +89,7 @@ Operations:
   $$
 * Average per operation = $O(n) / n = O(1)$.
 
-✅ Amortized cost per insertion = **O(1)**.
+ Amortized cost per insertion = **O(1)**.
 
 ---
 
@@ -108,7 +108,7 @@ Each increment may flip multiple bits.
 * Total flips = $O(n)$.
 * Amortized cost = $O(1)$ per increment.
 
-✅ Amortized increment = **O(1)**.
+ Amortized increment = **O(1)**.
 
 ---
 
@@ -132,7 +132,7 @@ Each increment may flip multiple bits.
 
 ---
 
-## 🔹 Visual Aid
+##  Visual Aid
 
 ```
 Dynamic Array Growth
@@ -143,7 +143,7 @@ Amortized: O(1) average cost
 
 ---
 
-## 🔹 Complexity Summary
+##  Complexity Summary
 
 | Operation Type           | Worst Case | Amortized Case |
 | ------------------------ | ---------- | -------------- |
@@ -153,7 +153,7 @@ Amortized: O(1) average cost
 
 ---
 
-## 🔹 Interview Tips
+##  Interview Tips
 
 * FAANG interviewers love **dynamic arrays** as an example.
 * Always mention **amortized vs worst-case difference**.
@@ -162,7 +162,7 @@ Amortized: O(1) average cost
 
 ---
 
-## 🔹 Practice Problems
+##  Practice Problems
 
 * [LeetCode 622 – Design Circular Queue](https://leetcode.com/problems/design-circular-queue/)
 * [LeetCode 380 – Insert Delete GetRandom O(1)](https://leetcode.com/problems/insert-delete-getrandom-o1/)
@@ -170,7 +170,7 @@ Amortized: O(1) average cost
 
 ---
 
-✅ **Key Takeaway**:
+ **Key Takeaway**:
 Amortized analysis allows us to **spread out expensive operations** across many cheap ones, yielding efficient **average guarantees**.
 
 ---

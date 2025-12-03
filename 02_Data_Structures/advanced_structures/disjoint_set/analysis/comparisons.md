@@ -1,8 +1,8 @@
-# 🔍 Comparisons of Disjoint Set (Union-Find) Approaches
+#  Comparisons of Disjoint Set (Union-Find) Approaches
 
 ---
 
-## 📌 Introduction
+##  Introduction
 
 The **Disjoint Set Union (DSU)** or **Union-Find** data structure is widely used for efficiently handling **dynamic connectivity problems**.
 However, different variations of **Find** and **Union** operations affect its performance significantly.
@@ -11,14 +11,14 @@ This document compares various DSU strategies in terms of **time complexity**, *
 
 ---
 
-## 📌 Variants of Union-Find
+##  Variants of Union-Find
 
 ### 1. **Naive Union-Find**
 
 * **Find**: Traverse parent pointers until the root.
 * **Union**: Simply make one root the parent of the other.
 
-❌ Issue: Trees can become skewed (like linked lists).
+ Issue: Trees can become skewed (like linked lists).
 Example:
 
 ```
@@ -35,7 +35,7 @@ Resulting tree height ≈ N
 * Always attach the **smaller tree** under the **larger tree**.
 * Ensures that tree height remains `O(log N)` in the worst case.
 
-✅ Prevents extremely unbalanced trees.
+ Prevents extremely unbalanced trees.
 
 ---
 
@@ -67,7 +67,7 @@ p → root
 
 ---
 
-## 📌 Comparison Table
+##  Comparison Table
 
 | Technique                            | Worst-Case Find | Amortized Find | Union Complexity | Notes                                  |
 | ------------------------------------ | --------------- | -------------- | ---------------- | -------------------------------------- |
@@ -78,7 +78,7 @@ p → root
 
 ---
 
-## 📌 Visual Comparison
+##  Visual Comparison
 
 ### Without Optimizations
 
@@ -106,7 +106,7 @@ Height = `O(1)`
 
 ---
 
-## 📌 Complexity Analysis
+##  Complexity Analysis
 
 * **Union by Rank/Size:** Ensures trees remain balanced → `O(log N)`.
 * **Path Compression:** Flattens trees → nearly constant time.
@@ -115,22 +115,22 @@ Height = `O(1)`
   * Each operation runs in **amortized O(α(N))**,
   * where `α(N)` grows slower than log\*.
 
-👉 For all practical purposes, **DSU operations are constant time**.
+ For all practical purposes, **DSU operations are constant time**.
 
 ---
 
-## 📌 Interview Tips
+##  Interview Tips
 
 * **FAANG interviews** often ask:
 
   * “Implement Union-Find with optimizations.”
   * “Explain why DSU is almost constant time.”
   * “Where is DSU used?” (e.g., Kruskal’s MST, cycle detection, connectivity queries).
-* ⚠️ Common trick: If you forget path compression, performance may degrade badly in large test cases.
+*  Common trick: If you forget path compression, performance may degrade badly in large test cases.
 
 ---
 
-## 📌 Practice Problems
+##  Practice Problems
 
 * [LeetCode 1319 – Number of Operations to Make Network Connected](https://leetcode.com/problems/number-of-operations-to-make-network-connected/)
 * [LeetCode 684 – Redundant Connection](https://leetcode.com/problems/redundant-connection/)

@@ -36,7 +36,7 @@ In competitive programming, modular inverse is used constantly.
 
 ---
 
-## **✔ Method 1: Extended Euclidean Algorithm (General Case)**
+## ** Method 1: Extended Euclidean Algorithm (General Case)**
 
 Works when gcd(a, m) = 1, even if m is **not prime**.
 
@@ -61,7 +61,7 @@ return (x % m)
 
 ---
 
-## **✔ Method 2: Fermat’s Little Theorem (Prime Modulus Only!)**
+## ** Method 2: Fermat’s Little Theorem (Prime Modulus Only!)**
 
 If m is prime:
 
@@ -78,7 +78,7 @@ inverse = a^(m−2) mod m
 
 ---
 
-## **✔ Method 3: Precomputation Using Prefix Inverses**
+## ** Method 3: Precomputation Using Prefix Inverses**
 
 For all inverses from 1..n under prime modulus:
 

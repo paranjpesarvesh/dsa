@@ -1,6 +1,6 @@
-# ⚖️ Bloom Filter – Space-Time Trade-off Analysis
+#  Bloom Filter – Space-Time Trade-off Analysis
 
-## 1. 🌱 Quick Recap of Bloom Filters
+## 1.  Quick Recap of Bloom Filters
 
 * **Bloom Filter**: A probabilistic data structure used to check if an element *may belong* to a set.
 * Uses a **bit array of size `m`** and **`k` independent hash functions**.
@@ -9,11 +9,11 @@
   * **Insert(x)** → Hash `x` with `k` functions, set corresponding bits.
   * **Query(x)** → Check if all `k` bit positions are set.
 
-👉 Space, time, and accuracy are closely tied together.
+ Space, time, and accuracy are closely tied together.
 
 ---
 
-## 2. 📊 The Core Trade-off
+## 2.  The Core Trade-off
 
 Bloom Filters must balance **three parameters**:
 
@@ -35,7 +35,7 @@ $$
 
 ---
 
-## 3. 📈 Optimal Number of Hash Functions
+## 3.  Optimal Number of Hash Functions
 
 For given `m` (bit array size) and `n` (items inserted):
 
@@ -48,7 +48,7 @@ $$
 
 ---
 
-## 4. 🔀 Trade-off Scenarios
+## 4.  Trade-off Scenarios
 
 ### Case 1: Memory-Constrained Systems
 
@@ -72,7 +72,7 @@ $$
 
 ---
 
-## 5. 🖼 ASCII Visualization
+## 5.  ASCII Visualization
 
 ```
    False Positive Rate vs Hash Functions (k)
@@ -105,8 +105,8 @@ $$
 * **Query**: O(k) (check `k` bits).
 * **Space**: O(m) bits.
 
-👉 Trade-off: Larger `m` → more memory, fewer false positives.
-👉 Trade-off: Larger `k` → fewer false positives, slower queries.
+ Trade-off: Larger `m` → more memory, fewer false positives.
+ Trade-off: Larger `k` → fewer false positives, slower queries.
 
 ---
 
@@ -118,11 +118,11 @@ $$
   * Be ready to **derive optimal `k`**.
 * **GATE/Academics**: Be prepared to **calculate FPP** given `m, n, k`.
 
-⚡ Trick: Always mention **trade-offs** (not just formulas). Interviewers love seeing awareness of practical constraints.
+ Trick: Always mention **trade-offs** (not just formulas). Interviewers love seeing awareness of practical constraints.
 
 ---
 
-## 8. 📝 Practice Problems
+## 8.  Practice Problems
 
 * [GFG – Bloom Filter Introduction & Problems](https://www.geeksforgeeks.org/bloom-filters-introduction-and-python-implementation/)
 * [LeetCode – Design Randomized Set (related to probabilistic structures)](https://leetcode.com/problems/insert-delete-getrandom-o1/)
