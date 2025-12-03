@@ -91,9 +91,25 @@ Organizes problems by **common patterns and strategies**.
 
 ## Contributing
 
-- Follow the **coding conventions** in `00_prompt`.
+- Follow **coding conventions** in `00_prompt`.
 - Add problems, solutions, and explanations with **clear documentation**.
 - Include **complexity analysis and edge case handling** for each implementation.
+
+---
+
+**Note on Code Generation:**
+Most code implementations and documentation in this repository have been generated using AI/LLM assistance. While efforts have been made to ensure correctness and completeness, you may encounter:
+
+- Minor syntax errors or compilation issues
+- Suboptimal algorithm implementations
+- Incomplete edge case handling
+
+**If you find issues:**
+1. Feel free to raise a Pull Request for content additions and improvements
+2. For code corrections, please consider creating a PR rather than just reporting issues
+3. Focus on enhancing the educational value and correctness of implementations
+
+This repository serves as a comprehensive learning resource, and community contributions are welcome to improve its quality and accuracy.
 
 ---
 
