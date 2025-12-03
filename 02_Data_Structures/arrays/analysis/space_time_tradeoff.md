@@ -1,4 +1,4 @@
-# 📄 Space-Time Trade-offs in Arrays
+#  Space-Time Trade-offs in Arrays
 
 **Path Context:** `dsa/02_Data_Structures/arrays/analysis/space_time_tradeoff.md`
 This document explains the **trade-offs between time complexity and memory usage** in array implementations, including **static arrays, dynamic arrays, and array alternatives**.

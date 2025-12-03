@@ -1,8 +1,8 @@
-# 📘 Space Complexity in Algorithms
+#  Space Complexity in Algorithms
 
 ---
 
-## 🔹 1. What is Space Complexity?
+##  1. What is Space Complexity?
 
 **Space Complexity** of an algorithm is the **total memory required** by the program to execute successfully.
 It includes memory for:
@@ -29,9 +29,9 @@ $$
 
 ---
 
-## 🔹 2. Components of Space Complexity
+##  2. Components of Space Complexity
 
-### 📍 (a) Instruction Space
+###  (a) Instruction Space
 
 Memory required to store the compiled code.
 
@@ -39,14 +39,14 @@ Memory required to store the compiled code.
 
 ---
 
-### 📍 (b) Fixed Part
+###  (b) Fixed Part
 
 * Constants, simple variables, object references.
 * Example: `int count = 0;`
 
 ---
 
-### 📍 (c) Variable Part
+###  (c) Variable Part
 
 1. **Input storage** → Storing arrays, matrices, trees, etc.
 2. **Auxiliary space** → Extra data structures used during execution.
@@ -54,7 +54,7 @@ Memory required to store the compiled code.
 
 ---
 
-## 🔹 3. Examples
+##  3. Examples
 
 ### Example 1: Iterative Sum
 
@@ -107,7 +107,7 @@ void mergeSort(int arr[], int l, int r) {
 
 ---
 
-## 🔹 4. Visual Aid: Stack Growth in Recursion
+##  4. Visual Aid: Stack Growth in Recursion
 
 ```
 factorial(4)
@@ -126,7 +126,7 @@ In general → depth = `n`.
 
 ---
 
-## 🔹 5. Common Space Complexities
+##  5. Common Space Complexities
 
 | Algorithm             | Space Complexity                 |
 | --------------------- | -------------------------------- |
@@ -141,7 +141,7 @@ In general → depth = `n`.
 
 ---
 
-## 🔹 6. Trade-offs: Time vs. Space
+##  6. Trade-offs: Time vs. Space
 
 * **Caching (DP, memoization):** Reduces time at cost of extra space.
 * **In-place algorithms (QuickSort, HeapSort):** Save space but may be harder to implement.
@@ -149,7 +149,7 @@ In general → depth = `n`.
 
 ---
 
-## 🔹 7. Edge Cases & Pitfalls
+##  7. Edge Cases & Pitfalls
 
 * **Stack Overflow:** Deep recursion (`n` large in factorial).
 * **Memory Limit Exceeded (MLE):** Common in coding contests when arrays are too large.
@@ -157,7 +157,7 @@ In general → depth = `n`.
 
 ---
 
-## 🔹 8. Interview Tips
+##  8. Interview Tips
 
 * Interviewers often ask **time + space complexity trade-offs**.
 * Be clear about **recursion depth** (e.g., DFS on trees = height of tree).
@@ -166,7 +166,7 @@ In general → depth = `n`.
 
 ---
 
-## 🔹 9. Practice Problems
+##  9. Practice Problems
 
 * [LeetCode 70 – Climbing Stairs](https://leetcode.com/problems/climbing-stairs/) → Recursion vs DP space.
 * [LeetCode 322 – Coin Change](https://leetcode.com/problems/coin-change/) → Bottom-up vs top-down space trade-off.
@@ -175,7 +175,7 @@ In general → depth = `n`.
 
 ---
 
-✅ **Key Takeaway:**
+ **Key Takeaway:**
 Space complexity is as important as time complexity.
 Mastering it requires awareness of **recursion stack, auxiliary structures, and in-place optimizations**.
 

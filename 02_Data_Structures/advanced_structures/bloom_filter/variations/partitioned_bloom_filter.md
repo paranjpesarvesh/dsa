@@ -7,7 +7,7 @@ This design improves **cache efficiency** and **reduces correlation** between ha
 
 ---
 
-## ✅ Motivation
+##  Motivation
 
 * In a **standard Bloom Filter**, all `k` hash functions set bits in the same global array.
 
@@ -180,10 +180,10 @@ Partition 3: [1][0][0][0]
 | False positives analysis | Approximate           | Accurate                 |
 | Cache locality           | Lower                 | Higher                   |
 | Space                    | m bits                | m bits                   |
-| Delete support           | ❌                     | ❌ (extendable to CBF)    |
+| Delete support           |                      |  (extendable to CBF)    |
 
 ---
 
-🚀 **In short:** Partitioned Bloom Filters divide the bit array into equal partitions for each hash function, improving **predictability of false positives** and **cache performance**, without extra memory cost.
+ **In short:** Partitioned Bloom Filters divide the bit array into equal partitions for each hash function, improving **predictability of false positives** and **cache performance**, without extra memory cost.
 
 ---

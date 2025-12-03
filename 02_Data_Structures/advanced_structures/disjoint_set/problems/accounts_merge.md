@@ -2,7 +2,7 @@
 
 ---
 
-## 📌 Problem Definition
+##  Problem Definition
 
 The **Accounts Merge problem** (LeetCode 721) is a **classic application of Disjoint Set Union (DSU)** where multiple accounts belonging to the same user need to be merged.
 
@@ -12,7 +12,7 @@ The **Accounts Merge problem** (LeetCode 721) is a **classic application of Disj
 
 ---
 
-## 📌 Why DSU Works Here?
+##  Why DSU Works Here?
 
 * Each **email** can be thought of as a **node** in a graph.
 * If two emails appear in the same account, they belong to the same **connected component**.
@@ -20,7 +20,7 @@ The **Accounts Merge problem** (LeetCode 721) is a **classic application of Disj
 
 ---
 
-## 📌 Example
+##  Example
 
 Input:
 
@@ -51,7 +51,7 @@ Final Output:
 
 ---
 
-## 📌 Pseudocode
+##  Pseudocode
 
 ```
 function accountsMerge(accounts):
@@ -83,7 +83,7 @@ function accountsMerge(accounts):
 
 ---
 
-## 📌 Complexity Analysis
+##  Complexity Analysis
 
 | Operation        | Complexity                                      |
 | ---------------- | ----------------------------------------------- |
@@ -91,11 +91,11 @@ function accountsMerge(accounts):
 | Building mapping | `O(N * K)` where `K` = avg emails per account   |
 | Sorting emails   | `O(M log M)` where `M` = total number of emails |
 
-👉 Overall complexity: **`O(NK + M log M)`** with `O(M)` space.
+ Overall complexity: **`O(NK + M log M)`** with `O(M)` space.
 
 ---
 
-## 📌 ASCII Visualization
+##  ASCII Visualization
 
 Accounts as email connections:
 
@@ -116,7 +116,7 @@ Connected components → merged accounts.
 
 ---
 
-## 📌 Variations
+##  Variations
 
 * **Merging social media accounts** (e.g., multiple usernames pointing to same ID).
 * **Phone number + email merging**.
@@ -124,7 +124,7 @@ Connected components → merged accounts.
 
 ---
 
-## 📌 Interview Tips
+##  Interview Tips
 
 * Be ready to explain **why DSU is chosen over DFS/BFS**.
 
@@ -134,7 +134,7 @@ Connected components → merged accounts.
 
 ---
 
-## 📌 Practice Problems
+##  Practice Problems
 
 * [LeetCode 721 – Accounts Merge](https://leetcode.com/problems/accounts-merge/)
 * [LeetCode 547 – Number of Provinces](https://leetcode.com/problems/number-of-provinces/)

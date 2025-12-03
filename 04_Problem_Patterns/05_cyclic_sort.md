@@ -58,7 +58,7 @@ else:
 i += 1
 return arr
 
-````
+```
 
 **After sorting:**
 
@@ -93,7 +93,7 @@ def cyclic_sort(arr):
 arr = [3, 1, 5, 4, 2]
 sorted_arr = cyclic_sort(arr)
 print(sorted_arr)  # Output: [1,2,3,4,5]
-````
+```
 
 ---
 

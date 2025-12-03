@@ -1,10 +1,10 @@
-# 🐍 Python Cheatsheet for DSA
+#  Python Cheatsheet for DSA
 
 This cheatsheet is a **quick reference guide** for using Python effectively in solving **data structures, algorithms, and interview problems**. It balances **speed, readability, and practical use cases** for contests, FAANG interviews, and GATE preparation.
 
 ---
 
-## 🔹 1. Basics
+##  1. Basics
 
 ### Input/Output
 
@@ -34,7 +34,7 @@ x, y, z = 1, 2, 3
 
 ---
 
-## 🔹 2. Data Types & Useful Operations
+##  2. Data Types & Useful Operations
 
 | Type       | Common Ops / Tricks                            |                                     |
 | ---------- | ---------------------------------------------- | ----------------------------------- |
@@ -57,7 +57,7 @@ for c in "abracadabra":
 
 ---
 
-## 🔹 3. Itertools (Patterns & Combinations)
+##  3. Itertools (Patterns & Combinations)
 
 ```python
 from itertools import permutations, combinations, product
@@ -74,7 +74,7 @@ list(product([1, 2], [3, 4]))     # [(1,3), (1,4), (2,3), (2,4)]
 
 ---
 
-## 🔹 4. Math & Random
+##  4. Math & Random
 
 ```python
 import math, random
@@ -89,7 +89,7 @@ random.randint(1, 100)  # Random integer
 
 ---
 
-## 🔹 5. Sorting & Heap
+##  5. Sorting & Heap
 
 ```python
 arr = [("alice", 25), ("bob", 20), ("carol", 30)]
@@ -105,7 +105,7 @@ heapq.heappop(pq)  # (1, "task1")
 
 ---
 
-## 🔹 6. Queue, Stack, Deque
+##  6. Queue, Stack, Deque
 
 ```python
 from collections import deque
@@ -128,7 +128,7 @@ dq.pop()
 
 ---
 
-## 🔹 7. Searching & Bisect
+##  7. Searching & Bisect
 
 ```python
 import bisect
@@ -140,7 +140,7 @@ bisect.bisect_right(arr, 4)  # 4 (index after last 4)
 
 ---
 
-## 🔹 8. Recursion & Memoization
+##  8. Recursion & Memoization
 
 ```python
 import functools
@@ -154,7 +154,7 @@ def fib(n):
 
 ---
 
-## 🔹 9. Graph Utilities
+##  9. Graph Utilities
 
 ```python
 from collections import defaultdict, deque
@@ -177,7 +177,7 @@ def bfs(start):
 
 ---
 
-## 🔹 10. Complexity Quick Ref (Python Operations)
+##  10. Complexity Quick Ref (Python Operations)
 
 | Operation             | Time Complexity |
 | --------------------- | --------------- |
@@ -190,15 +190,15 @@ def bfs(start):
 
 ---
 
-## 🔹 11. Interview Tips
+##  11. Interview Tips
 
-* 🚀 **FAANG**: Focus on Python’s **dict, set, heapq, deque**—used in most patterns (sliding window, graphs, priority queues).
-* 📝 **GATE**: Python isn’t the exam language, but knowing how to map concepts (recursion, DP, complexity) is useful.
-* ⚡ Avoid slow constructs in contests: use `sys.stdin.readline` for fast I/O.
+*  **FAANG**: Focus on Python’s **dict, set, heapq, deque**—used in most patterns (sliding window, graphs, priority queues).
+*  **GATE**: Python isn’t the exam language, but knowing how to map concepts (recursion, DP, complexity) is useful.
+*  Avoid slow constructs in contests: use `sys.stdin.readline` for fast I/O.
 
 ---
 
-## 🔹 12. Practice Problems
+##  12. Practice Problems
 
 * [LeetCode – Python tagged problems](https://leetcode.com/problemset/all/?language=Python)
 * [HackerRank Python domain](https://www.hackerrank.com/domains/tutorials/10-days-of-python)

@@ -1,8 +1,8 @@
-# 💧 Percolation Problem using Disjoint Set (Union-Find)
+#  Percolation Problem using Disjoint Set (Union-Find)
 
 ---
 
-## 📌 Introduction
+##  Introduction
 
 The **Percolation Problem** is a classic application of **Disjoint Set (Union-Find)** in **physics, computer science, and network connectivity**.
 
@@ -14,7 +14,7 @@ Given an $N \times N$ grid, each site can be **open** or **blocked**. The system
 
 ---
 
-## 📌 Mathematical Intuition
+##  Mathematical Intuition
 
 1. **Represent each site as a node** in a graph.
 2. **Connect open sites** with edges to their open neighbors (up, down, left, right).
@@ -26,7 +26,7 @@ Given an $N \times N$ grid, each site can be **open** or **blocked**. The system
 
 ---
 
-## 📌 Step-by-Step Approach
+##  Step-by-Step Approach
 
 1. **Initialize DSU** with $N^2 + 2$ nodes (extra 2 for virtual top/bottom).
 2. For each **open site (i,j)**:
@@ -38,7 +38,7 @@ Given an $N \times N$ grid, each site can be **open** or **blocked**. The system
 
 ---
 
-## 📌 Pseudocode
+##  Pseudocode
 
 ```
 function percolates(grid):
@@ -68,7 +68,7 @@ function percolates(grid):
 
 ---
 
-## 📌 Complexity Analysis
+##  Complexity Analysis
 
 | Operation          | Complexity               |
 | ------------------ | ------------------------ |
@@ -81,7 +81,7 @@ function percolates(grid):
 
 ---
 
-## 📌 ASCII Visualization
+##  ASCII Visualization
 
 ```
 Grid: 4x4 (O=open, X=blocked)
@@ -104,7 +104,7 @@ TOP → O → O → O → O → BOTTOM
 
 ---
 
-## 📌 Variations & Edge Cases
+##  Variations & Edge Cases
 
 * **Dynamic percolation**: open sites one by one and check connectivity.
 * **Weighted percolation**: assign weights to sites for probabilistic models.
@@ -113,7 +113,7 @@ TOP → O → O → O → O → BOTTOM
 
 ---
 
-## 📌 Interview Tips
+##  Interview Tips
 
 * Frequently asked in **network connectivity**, **simulations**, and **graph algorithms** problems.
 * Remember **virtual nodes trick** for top and bottom row connectivity.
@@ -121,7 +121,7 @@ TOP → O → O → O → O → BOTTOM
 
 ---
 
-## 📌 Practice Problems
+##  Practice Problems
 
 * [GFG – Percolation Problem](https://www.geeksforgeeks.org/percolation-problem/)
 * [LeetCode 200 – Number of Islands](https://leetcode.com/problems/number-of-islands/) (similar concept)
@@ -129,6 +129,6 @@ TOP → O → O → O → O → BOTTOM
 
 ---
 
-✅ **Summary:**
+ **Summary:**
 Percolation problem demonstrates how **Disjoint Set** can efficiently solve **connectivity problems on a grid**, making it a **classic application** in both competitive programming and real-world simulations.
 

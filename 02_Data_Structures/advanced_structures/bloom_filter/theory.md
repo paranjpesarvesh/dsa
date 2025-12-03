@@ -1,8 +1,8 @@
-# 🌸 Bloom Filter — Theory
+#  Bloom Filter — Theory
 
 ---
 
-## 🔹 What is a Bloom Filter?
+##  What is a Bloom Filter?
 
 A **Bloom Filter** is a **probabilistic data structure** designed to test whether an element is part of a set.
 It guarantees **no false negatives** (if it says "not present," it is definitely not present) but allows **false positives** (it might say "present" even if it is not).
@@ -14,7 +14,7 @@ This makes it ideal when:
 
 ---
 
-## 🔹 Why Use Bloom Filters?
+##  Why Use Bloom Filters?
 
 - Traditional structures like **HashSet / TreeSet** provide exact answers but require **O(n)** memory.
 - Bloom Filters use a **bit array** + **multiple hash functions** to store set membership in **much smaller memory**.
@@ -22,7 +22,7 @@ This makes it ideal when:
 
 ---
 
-## 🔹 Core Concepts
+##  Core Concepts
 
 ### Components:
 1. **Bit Array (`m` bits):** Initially all `0`.
@@ -30,7 +30,7 @@ This makes it ideal when:
 
 ---
 
-## 🔹 How It Works
+##  How It Works
 
 ### Insertion
 - Hash the element with `k` hash functions.
@@ -43,7 +43,7 @@ This makes it ideal when:
 
 ---
 
-## 🔹 Example Walkthrough
+##  Example Walkthrough
 
 Suppose:
 - Bit array size `m = 10`
@@ -75,7 +75,7 @@ After:     \[0 1 1 0 1 1 0 1 0 0]
 
 ---
 
-## 🔹 ASCII Visualization
+##  ASCII Visualization
 
 ```
 
@@ -86,11 +86,11 @@ Array:   0 1 1 0 1 1 0 1 0 0
 ↑   ↑   ↑
 "dog" and "cat" hashes
 
-````
+```
 
 ---
 
-## 🔹 Mathematical Analysis
+##  Mathematical Analysis
 
 ### False Positive Probability (FPP)
 
@@ -129,7 +129,7 @@ m = -\frac{n \ln p}{(\ln 2)^2}
 
 ---
 
-## 🔹 Complexity Analysis
+##  Complexity Analysis
 
 | Operation | Time Complexity | Space Complexity |
 |-----------|-----------------|------------------|
@@ -140,7 +140,7 @@ Since `k` is usually small (~7–10), both are **effectively O(1)**.
 
 ---
 
-## 🔹 Edge Cases
+##  Edge Cases
 
 - **Overfilled filter** → too many elements cause high false positive rate.
 - **Deletions not possible** in standard Bloom Filters.
@@ -148,7 +148,7 @@ Since `k` is usually small (~7–10), both are **effectively O(1)**.
 
 ---
 
-## 🔹 Variations
+##  Variations
 
 1. **Counting Bloom Filter**
    - Uses counters instead of bits → supports deletion.
@@ -164,7 +164,7 @@ Since `k` is usually small (~7–10), both are **effectively O(1)**.
 
 ---
 
-## 🔹 Pseudocode
+##  Pseudocode
 
 ```text
 function INSERT(item):
@@ -178,11 +178,11 @@ function QUERY(item):
         if bit_array[idx] == 0:
             return "Not in set"
     return "Probably in set"
-````
+```
 
 ---
 
-## 🔹 Interview Tips
+##  Interview Tips
 
 * **FAANG System Design**:
   Asked in caching/distributed systems → "How to efficiently check membership with limited memory?"
@@ -198,7 +198,7 @@ function QUERY(item):
 
 ---
 
-## 🔹 Practice Problems
+##  Practice Problems
 
 * [GeeksforGeeks — Bloom Filter](https://www.geeksforgeeks.org/bloom-filters-introduction-and-python-implementation/)
 * [LeetCode — Design Randomized Set (similar concept)](https://leetcode.com/problems/insert-delete-getrandom-o1/)
@@ -206,19 +206,19 @@ function QUERY(item):
 
 ---
 
-## 🔹 Summary Table
+##  Summary Table
 
 | Feature           | Bloom Filter                     |
 | ----------------- | -------------------------------- |
-| Exact membership  | ❌ No                             |
-| False negatives   | ❌ No                             |
-| False positives   | ✅ Yes                            |
-| Space efficiency  | ✅ High                           |
-| Supports deletion | ❌ Standard (only in Counting BF) |
-| Scalable          | ❌ (only Scalable BF)             |
+| Exact membership  |  No                             |
+| False negatives   |  No                             |
+| False positives   |  Yes                            |
+| Space efficiency  |  High                           |
+| Supports deletion |  Standard (only in Counting BF) |
+| Scalable          |  (only Scalable BF)             |
 
 ---
 
-✅ Bloom Filters are a **cornerstone of probabilistic data structures** → fast, space-efficient, and widely used in **large-scale systems**.
+ Bloom Filters are a **cornerstone of probabilistic data structures** → fast, space-efficient, and widely used in **large-scale systems**.
 
 ---

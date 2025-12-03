@@ -1,4 +1,4 @@
-# 🌉 Worked Example 05 – Graph Traversal (BFS & DFS)
+#  Worked Example 05 – Graph Traversal (BFS & DFS)
 
 In this worked example, we study the **time complexity analysis of graph traversal algorithms**:
 
@@ -9,7 +9,7 @@ These are **fundamental building blocks** for solving graph-related problems suc
 
 ---
 
-## 🔹 Problem Statement
+##  Problem Statement
 
 Given a graph $G = (V, E)$, where $V$ is the set of vertices and $E$ is the set of edges, we want to **visit every vertex** that is reachable from a given starting vertex.
 
@@ -20,7 +20,7 @@ Two main traversal strategies:
 
 ---
 
-## 🔹 Graph Representation
+##  Graph Representation
 
 Graphs are commonly stored as:
 
@@ -50,7 +50,7 @@ ASCII Visualization:
 
 ---
 
-## 🔹 BFS – Pseudocode
+##  BFS – Pseudocode
 
 ```text
 BFS(Graph, start):
@@ -72,7 +72,7 @@ Order of visit: **0 → 1 → 2 → 3 → 4 → 5**
 
 ---
 
-## 🔹 DFS – Pseudocode
+##  DFS – Pseudocode
 
 **Recursive DFS:**
 
@@ -103,7 +103,7 @@ One possible order: **0 → 1 → 3 → 4 → 5 → 2**
 
 ---
 
-## 🔹 Complexity Analysis
+##  Complexity Analysis
 
 Let:
 
@@ -120,7 +120,7 @@ Let:
 
 ---
 
-## 🔹 Edge Cases
+##  Edge Cases
 
 1. **Disconnected Graph**: Run BFS/DFS from all unvisited nodes to cover all components.
 2. **Directed Graphs**: Traversal direction matters (follow edges only one way).
@@ -129,7 +129,7 @@ Let:
 
 ---
 
-## 🔹 C++ Implementation (BFS & DFS)
+##  C++ Implementation (BFS & DFS)
 
 ```cpp
 #include <iostream>
@@ -186,7 +186,7 @@ public:
 
 ---
 
-## 🔹 Python Implementation (BFS & DFS)
+##  Python Implementation (BFS & DFS)
 
 ```python
 from collections import deque
@@ -227,7 +227,7 @@ class Graph:
 
 ---
 
-## 🔹 Interview Tips
+##  Interview Tips
 
 * **FAANG**: BFS for shortest path, DFS for backtracking (mazes, word search).
 * **GATE**: Focus on complexity proofs $O(V + E)$.
@@ -238,7 +238,7 @@ class Graph:
 
 ---
 
-## 🔹 Practice Problems
+##  Practice Problems
 
 * [LeetCode 200 – Number of Islands (DFS/BFS)](https://leetcode.com/problems/number-of-islands/)
 * [LeetCode 133 – Clone Graph](https://leetcode.com/problems/clone-graph/)
@@ -247,6 +247,6 @@ class Graph:
 
 ---
 
-✅ This worked example shows how **BFS & DFS** work, why their complexity is $O(V + E)$, and how they are tested in **interviews & exams**.
+ This worked example shows how **BFS & DFS** work, why their complexity is $O(V + E)$, and how they are tested in **interviews & exams**.
 
 ---

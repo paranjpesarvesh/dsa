@@ -4,7 +4,7 @@ This cheatsheet contains the most **commonly used mathematical formulas** in dat
 
 ---
 
-## 🔹 1. Summation Formulas
+##  1. Summation Formulas
 
 | Formula                          | Identity                                           | Usage in DSA                         |
 | -------------------------------- | -------------------------------------------------- | ------------------------------------ |
@@ -16,7 +16,7 @@ This cheatsheet contains the most **commonly used mathematical formulas** in dat
 
 ---
 
-## 🔹 2. Logarithmic Identities
+##  2. Logarithmic Identities
 
 | Identity                                   | Notes                                  |
 | ------------------------------------------ | -------------------------------------- |
@@ -26,11 +26,11 @@ This cheatsheet contains the most **commonly used mathematical formulas** in dat
 | log base change                            | logₐ b = log b / log a                 |
 | log(n!) ≈ n log n – n (Stirling’s approx.) | Analyzing factorial-based complexities |
 
-⚡ **Interview relevance**: Many complexity reductions depend on rewriting `log` terms, e.g., `O(n log n)` vs `O(log(n!))`.
+ **Interview relevance**: Many complexity reductions depend on rewriting `log` terms, e.g., `O(n log n)` vs `O(log(n!))`.
 
 ---
 
-## 🔹 3. Modular Arithmetic
+##  3. Modular Arithmetic
 
 * **Modulo Properties**
 
@@ -50,7 +50,7 @@ This cheatsheet contains the most **commonly used mathematical formulas** in dat
 
 ---
 
-## 🔹 4. Combinatorics
+##  4. Combinatorics
 
 * n! = n × (n–1) × … × 1
 * Permutations: P(n, r) = n! / (n–r)!
@@ -58,11 +58,11 @@ This cheatsheet contains the most **commonly used mathematical formulas** in dat
 * Binomial Theorem:
   (x + y)ⁿ = Σ \[C(n, k) × xⁿ⁻ᵏ × yᵏ],  k=0..n
 
-⚡ **Tip**: Precompute factorials and inverses in **O(n)** for quick nCr calculations in contests.
+ **Tip**: Precompute factorials and inverses in **O(n)** for quick nCr calculations in contests.
 
 ---
 
-## 🔹 5. Number Theory
+##  5. Number Theory
 
 * Euclidean GCD: gcd(a, b) = gcd(b, a % b) → O(log min(a, b))
 * LCM: lcm(a, b) = (a × b) / gcd(a, b)
@@ -72,7 +72,7 @@ This cheatsheet contains the most **commonly used mathematical formulas** in dat
 
 ---
 
-## 🔹 6. Probability & Expected Value
+##  6. Probability & Expected Value
 
 * Expected value linearity:
   E\[X + Y] = E\[X] + E\[Y]
@@ -82,7 +82,7 @@ This cheatsheet contains the most **commonly used mathematical formulas** in dat
 
 ---
 
-## 🔹 7. Recurrence Relations & Master Theorem
+##  7. Recurrence Relations & Master Theorem
 
 ### Master Theorem
 
@@ -99,7 +99,7 @@ T(n) = aT(n/b) + f(n)
 
 ---
 
-## 🔹 8. Common Summation Tricks
+##  8. Common Summation Tricks
 
 * Harmonic series: 1 + 1/2 + 1/3 + … + 1/n ≈ ln(n) + γ (Euler’s constant)
 * Σ log i (i=1..n) ≈ n log n – n
@@ -107,7 +107,7 @@ T(n) = aT(n/b) + f(n)
 
 ---
 
-## 🔹 9. Visual Aid: Complexity Growth Rates
+##  9. Visual Aid: Complexity Growth Rates
 
 ```
 O(1) < O(log n) < O(n) < O(n log n) < O(n²) < O(2^n) < O(n!)
@@ -115,15 +115,15 @@ O(1) < O(log n) < O(n) < O(n log n) < O(n²) < O(2^n) < O(n!)
 
 ---
 
-## 🔹 10. Interview Tips
+##  10. Interview Tips
 
-* 🚀 **FAANG**: Expect modular arithmetic (subarray sum, combinatorics), number theory (GCD/LCM, primes), probability (randomized algorithms).
-* 📝 **GATE**: Heavy focus on recurrence solving, summations, logarithmic simplifications, combinatorics.
-* ⚡ Always simplify expressions like `Σ log i` or `Σ n/2^i` → common in complexity proofs.
+*  **FAANG**: Expect modular arithmetic (subarray sum, combinatorics), number theory (GCD/LCM, primes), probability (randomized algorithms).
+*  **GATE**: Heavy focus on recurrence solving, summations, logarithmic simplifications, combinatorics.
+*  Always simplify expressions like `Σ log i` or `Σ n/2^i` → common in complexity proofs.
 
 ---
 
-## 🔹 11. Practice Problems
+##  11. Practice Problems
 
 * [LeetCode: Math Problems](https://leetcode.com/problemset/all/?topicSlugs=math)
 * [GFG: Mathematical Algorithms](https://www.geeksforgeeks.org/mathematical-algorithms/)

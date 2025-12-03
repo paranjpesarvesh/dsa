@@ -105,8 +105,8 @@ Adjacency Matrix:
 | Edge Lookup               | O(degree(u))             | O(1)                     |
 | Adding/Removing Edge      | O(1) / O(degree(u))      | O(1)                     |
 | Traversing Neighbors      | O(degree(u))             | O(V)                     |
-| Sparse Graphs             | ✅ Efficient              | ❌ Wasteful              |
-| Dense Graphs              | ❌ Less efficient         | ✅ Efficient              |
+| Sparse Graphs             |  Efficient              |  Wasteful              |
+| Dense Graphs              |  Less efficient         |  Efficient              |
 | Memory Usage              | Low for sparse graphs    | High                     |
 
 ---
@@ -166,8 +166,8 @@ Adjacency Matrix:
 
 ```
 
-Sparse Graph -> Adjacency List ✅
-Dense Graph  -> Adjacency Matrix ✅
+Sparse Graph -> Adjacency List 
+Dense Graph  -> Adjacency Matrix 
 Edge Lookup  -> Matrix O(1)
 Neighbor Iterate -> List O(degree)
 

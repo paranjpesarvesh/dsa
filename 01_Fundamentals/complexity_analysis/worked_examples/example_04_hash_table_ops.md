@@ -1,10 +1,10 @@
-# 🗂️ Worked Example 04 – Hash Table Operations
+#  Worked Example 04 – Hash Table Operations
 
 This worked example focuses on **Hash Tables** (also known as Hash Maps/Dictionaries), their **core operations**, and how to analyze their **time complexity** under different scenarios.
 
 ---
 
-## 🔹 Problem Statement
+##  Problem Statement
 
 We want to efficiently support the following operations on a collection of key-value pairs:
 
@@ -14,7 +14,7 @@ We want to efficiently support the following operations on a collection of key-v
 
 ---
 
-## 🔹 Key Concepts
+##  Key Concepts
 
 * **Hash Function (h):** Maps a key `k` to an index in the table.
   Example: `h(k) = k mod m` where `m` is table size.
@@ -26,7 +26,7 @@ We want to efficiently support the following operations on a collection of key-v
 
 ---
 
-## 🔹 Pseudocode (Chaining)
+##  Pseudocode (Chaining)
 
 ```text
 function insert(table, key, value):
@@ -51,7 +51,7 @@ function delete(table, key):
 
 ---
 
-## 🔹 Example
+##  Example
 
 Table size = 5, hash function `h(k) = k mod 5`.
 
@@ -67,7 +67,7 @@ Index 4: [17]
 
 ---
 
-## 🔹 Time & Space Complexity
+##  Time & Space Complexity
 
 | Operation | Average Case | Worst Case (bad hash) |
 | --------- | ------------ | --------------------- |
@@ -81,7 +81,7 @@ Index 4: [17]
 
 ---
 
-## 🔹 Variations
+##  Variations
 
 1. **Collision resolution strategies**
 
@@ -94,7 +94,7 @@ Index 4: [17]
 
 ---
 
-## 🔹 ASCII Illustration (Chaining)
+##  ASCII Illustration (Chaining)
 
 ```
 Hash Table (m = 7)
@@ -110,7 +110,7 @@ Index 6 | [42]
 
 ---
 
-## 🔹 C++ Implementation (Chaining)
+##  C++ Implementation (Chaining)
 
 ```cpp
 // Hash Table implementation using chaining
@@ -159,7 +159,7 @@ public:
 
 ---
 
-## 🔹 Python Implementation (Dictionary-like)
+##  Python Implementation (Dictionary-like)
 
 ```python
 # Hash Table with chaining using lists
@@ -194,7 +194,7 @@ class HashTable:
 
 ---
 
-## 🔹 Interview Tips
+##  Interview Tips
 
 * Common in **FAANG**: Design a hash table from scratch, explain **collision resolution**.
 * GATE: Analyze complexity under **load factor α**.
@@ -206,7 +206,7 @@ class HashTable:
 
 ---
 
-## 🔹 Practice Problems
+##  Practice Problems
 
 * [LeetCode 1 – Two Sum](https://leetcode.com/problems/two-sum/)
 * [LeetCode 347 – Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/)
@@ -214,6 +214,6 @@ class HashTable:
 
 ---
 
-✅ This worked example demonstrates **Insert, Search, Delete** in Hash Tables, their complexities, collision strategies, and practical usage.
+ This worked example demonstrates **Insert, Search, Delete** in Hash Tables, their complexities, collision strategies, and practical usage.
 
 ---

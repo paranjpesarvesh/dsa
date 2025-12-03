@@ -1,10 +1,10 @@
-# 📊 Big-O Complexity Cheatsheet
+#  Big-O Complexity Cheatsheet
 
 Big-O notation describes the **growth rate of an algorithm’s running time or memory usage** as the input size increases. This table acts as a quick reference for choosing or analyzing algorithms in interviews, contests, and exams (like **FAANG** or **GATE**).
 
 ---
 
-## 🔹 Common Complexity Classes
+##  Common Complexity Classes
 
 | Complexity     | Name              | Typical Examples                               |
 | -------------- | ----------------- | ---------------------------------------------- |
@@ -19,7 +19,7 @@ Big-O notation describes the **growth rate of an algorithm’s running time or m
 
 ---
 
-## 🔹 Array Operations
+##  Array Operations
 
 | Operation                   | Average Case | Worst Case |
 | --------------------------- | ------------ | ---------- |
@@ -29,11 +29,11 @@ Big-O notation describes the **growth rate of an algorithm’s running time or m
 | Insert (end, dynamic array) | O(1)\*       | O(n)       |
 | Delete (by value)           | O(n)         | O(n)       |
 
-⭐ *Amortized O(1) for dynamic arrays when resizing occasionally.*
+ *Amortized O(1) for dynamic arrays when resizing occasionally.*
 
 ---
 
-## 🔹 Linked List Operations
+##  Linked List Operations
 
 | Operation      | Singly LL | Doubly LL |
 | -------------- | --------- | --------- |
@@ -46,7 +46,7 @@ Big-O notation describes the **growth rate of an algorithm’s running time or m
 
 ---
 
-## 🔹 Stack & Queue
+##  Stack & Queue
 
 | Operation       | Complexity |
 | --------------- | ---------- |
@@ -57,7 +57,7 @@ Big-O notation describes the **growth rate of an algorithm’s running time or m
 
 ---
 
-## 🔹 Trees
+##  Trees
 
 | Operation    | Balanced BST (AVL, Red-Black) | Unbalanced BST | Heap            |
 | ------------ | ----------------------------- | -------------- | --------------- |
@@ -68,7 +68,7 @@ Big-O notation describes the **growth rate of an algorithm’s running time or m
 
 ---
 
-## 🔹 Hash Tables
+##  Hash Tables
 
 | Operation | Average Case | Worst Case |
 | --------- | ------------ | ---------- |
@@ -76,11 +76,11 @@ Big-O notation describes the **growth rate of an algorithm’s running time or m
 | Search    | O(1)         | O(n)       |
 | Delete    | O(1)         | O(n)       |
 
-⚠ Worst case happens due to poor hash function or extreme collisions.
+ Worst case happens due to poor hash function or extreme collisions.
 
 ---
 
-## 🔹 Graph Algorithms
+##  Graph Algorithms
 
 | Algorithm               | Complexity |
 | ----------------------- | ---------- |
@@ -95,7 +95,7 @@ Big-O notation describes the **growth rate of an algorithm’s running time or m
 
 ---
 
-## 🔹 Sorting Algorithms
+##  Sorting Algorithms
 
 | Algorithm      | Best       | Average    | Worst      | Space    | Stable |
 | -------------- | ---------- | ---------- | ---------- | -------- | ------ |
@@ -110,16 +110,16 @@ Big-O notation describes the **growth rate of an algorithm’s running time or m
 
 ---
 
-## 🔹 Interview Tips
+##  Interview Tips
 
-* 🚀 **FAANG style**: Often ask complexity trade-offs (e.g., why use HashMap vs BST?). Be ready to justify choices.
-* 📝 **GATE exams**: Expect recurrence relations, Master Theorem questions, and complexity derivations.
-* ⚠ Always mention both **average** and **worst-case** complexities in interviews.
-* 👩‍💻 Practical tip: When asked to “optimize,” think **hashing (O(1))**, **sorting + binary search (O(n log n))**, or **sliding window/two pointers (O(n))**.
+*  **FAANG style**: Often ask complexity trade-offs (e.g., why use HashMap vs BST?). Be ready to justify choices.
+*  **GATE exams**: Expect recurrence relations, Master Theorem questions, and complexity derivations.
+*  Always mention both **average** and **worst-case** complexities in interviews.
+*  Practical tip: When asked to “optimize,” think **hashing (O(1))**, **sorting + binary search (O(n log n))**, or **sliding window/two pointers (O(n))**.
 
 ---
 
-## 🔹 Practice Problems
+##  Practice Problems
 
 * [Big-O Practice (Khan Academy)](https://www.khanacademy.org/computing/computer-science/algorithms)
 * [GFG: Time Complexity Set 1–4](https://www.geeksforgeeks.org/analysis-of-algorithms-set-1-asymptotic-analysis/)

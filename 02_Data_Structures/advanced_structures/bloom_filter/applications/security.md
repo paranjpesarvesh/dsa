@@ -1,32 +1,32 @@
-# 🔒 Bloom Filters in Security Applications
+#  Bloom Filters in Security Applications
 
-## 1. 🚀 Introduction
+## 1.  Introduction
 
 In **cybersecurity**, systems must **detect threats fast** (malware, phishing, spam, unauthorized access).
 
-👉 Challenge:
+ Challenge:
 
 * Security datasets (e.g., blacklists of domains, IPs, hashes) can be **huge**.
 * Real-time detection requires **low-latency lookups**.
 
-✅ Bloom Filters solve this by providing **fast membership checks** with **low memory usage**, making them ideal for large-scale security applications.
+ Bloom Filters solve this by providing **fast membership checks** with **low memory usage**, making them ideal for large-scale security applications.
 
 ---
 
-## 2. 🌍 Why Bloom Filters in Security?
+## 2.  Why Bloom Filters in Security?
 
 * **Fast detection** → O(1) lookups.
 * **Memory efficient** → store millions of signatures in limited RAM.
 * **Scalable** → adapt to growing blacklists.
 
-⚖️ Trade-off:
+ Trade-off:
 
 * False positives possible → might flag a benign entity as malicious.
 * False negatives impossible → ensures no threat is missed if stored.
 
 ---
 
-## 3. 🔐 Applications in Security
+## 3.  Applications in Security
 
 ### 3.1 Malicious URL & IP Blacklists
 
@@ -41,7 +41,7 @@ Incoming request → Bloom Filter check
    └── Maybe present → Perform deep blacklist/database lookup
 ```
 
-✅ Saves bandwidth and improves response time.
+ Saves bandwidth and improves response time.
 
 ---
 
@@ -73,7 +73,7 @@ Incoming request → Bloom Filter check
 
 ---
 
-## 4. 🔢 Mathematical Intuition
+## 4.  Mathematical Intuition
 
 If:
 
@@ -88,21 +88,21 @@ FPP ≈ (1 - e^(-kn/m))^k
 ```
 
 Security systems often require **FPP < 0.01 (1%)**.
-👉 Designers tune `m` and `k` accordingly.
+ Designers tune `m` and `k` accordingly.
 
 ---
 
-## 5. ⚖️ Complexity Analysis
+## 5.  Complexity Analysis
 
 * **Insertion**: O(k)
 * **Query**: O(k)
 * **Memory**: O(m) bits
 
-💡 Compared to hash tables → Bloom Filters save **orders of magnitude in space**.
+ Compared to hash tables → Bloom Filters save **orders of magnitude in space**.
 
 ---
 
-## 6. 🧑‍💻 Pseudocode: Malicious URL Detection
+## 6. 🧑 Pseudocode: Malicious URL Detection
 
 ```pseudo
 Initialize BloomFilter(m, k)
@@ -135,7 +135,7 @@ function checkRequest(url):
 
 ---
 
-## 8. 📚 Practice Problems
+## 8.  Practice Problems
 
 * [GFG – Applications of Bloom Filters](https://www.geeksforgeeks.org/applications-of-bloom-filters/)
 * [LeetCode 705 – Design HashSet](https://leetcode.com/problems/design-hashset/) (Bloom Filter is an optimization over naive sets).
@@ -143,7 +143,7 @@ function checkRequest(url):
 
 ---
 
-## 9. 📖 References
+## 9.  References
 
 * Broder & Mitzenmacher, *Network Applications of Bloom Filters: A Survey*
 * [RFC 6777 – Bloom Filters for Internet Security](https://datatracker.ietf.org/doc/html/rfc6777)
@@ -151,6 +151,6 @@ function checkRequest(url):
 
 ---
 
-✅ This document provides a **comprehensive explanation of Bloom Filters in security applications**, blending **theory, math, pseudocode, diagrams, and interview context**.
+ This document provides a **comprehensive explanation of Bloom Filters in security applications**, blending **theory, math, pseudocode, diagrams, and interview context**.
 
 ---

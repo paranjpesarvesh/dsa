@@ -1,10 +1,10 @@
-# 🔍 Worked Example 02 – Binary Search
+#  Worked Example 02 – Binary Search
 
 This example demonstrates the **binary search algorithm**, a classic **divide & conquer technique**, and analyzes its **time and space complexity**.
 
 ---
 
-## 🔹 Problem Statement
+##  Problem Statement
 
 Given a **sorted array** of integers, find the **index of a target value**. If the target is not present, return -1.
 
@@ -17,7 +17,7 @@ Output: 2
 
 ---
 
-## 🔹 Step-by-Step Reasoning
+##  Step-by-Step Reasoning
 
 1. The array is sorted → we can eliminate half the elements each time.
 2. Initialize two pointers: `low = 0`, `high = n-1`.
@@ -31,7 +31,7 @@ Output: 2
 
 ---
 
-## 🔹 Pseudocode
+##  Pseudocode
 
 ```text
 function binary_search(arr, target):
@@ -50,7 +50,7 @@ function binary_search(arr, target):
 
 ---
 
-## 🔹 Implementation Templates
+##  Implementation Templates
 
 ### C++
 
@@ -109,7 +109,7 @@ print("Index:", binary_search(arr, target))
 
 ---
 
-## 🔹 Complexity Analysis
+##  Complexity Analysis
 
 | Operation                 | Cost             |
 | ------------------------- | ---------------- |
@@ -122,7 +122,7 @@ print("Index:", binary_search(arr, target))
 
 ---
 
-## 🔹 Variations
+##  Variations
 
 1. **Find first or last occurrence** (for duplicates)
 2. **Search in rotated sorted array**
@@ -131,7 +131,7 @@ print("Index:", binary_search(arr, target))
 
 ---
 
-## 🔹 Visual Aid
+##  Visual Aid
 
 Example Array: `[1, 3, 5, 7, 9]`, target = 5
 
@@ -149,7 +149,7 @@ binary_search(arr, 5)
 
 ---
 
-## 🔹 Interview Tips
+##  Interview Tips
 
 * Always mention **sorted requirement**.
 * Discuss **iterative vs recursive trade-offs**:
@@ -160,7 +160,7 @@ binary_search(arr, 5)
 
 ---
 
-## 🔹 Practice Problems
+##  Practice Problems
 
 * [LeetCode 704 – Binary Search](https://leetcode.com/problems/binary-search/)
 * [LeetCode 34 – Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/)
@@ -169,6 +169,6 @@ binary_search(arr, 5)
 
 ---
 
-✅ This worked example shows **how a classic problem** demonstrates the **divide & conquer paradigm** and the importance of **complexity analysis**.
+ This worked example shows **how a classic problem** demonstrates the **divide & conquer paradigm** and the importance of **complexity analysis**.
 
 ---

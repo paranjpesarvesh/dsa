@@ -54,7 +54,7 @@ i=0, j=4 → 1+6=7 → j--
 i=0, j=3 → 1+4=5 → i++
 i=1, j=3 → 2+4=6 → found
 
-````
+```
 
 ### 3.2 Same-direction Pointers / Sliding Window
 
@@ -93,7 +93,7 @@ def two_sum_sorted(arr, target):
         else:
             right -= 1
     return None
-````
+```
 
 ### Same-direction pointers (variable-length window)
 

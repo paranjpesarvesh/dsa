@@ -2,7 +2,7 @@
 
 ---
 
-## 📌 Introduction
+##  Introduction
 
 The **Satisfiability of Equality Equations** problem is a classic **DSU application** in **graph theory** and **constraint solving**.
 
@@ -20,7 +20,7 @@ Determine whether it is possible to assign values to variables so that **all equ
 
 ---
 
-## 📌 Mathematical Intuition
+##  Mathematical Intuition
 
 1. **Model variables as nodes** in a graph.
 2. **Union all variables connected by `==`** equations.
@@ -30,7 +30,7 @@ This leverages **DSU (Union-Find)** to efficiently track equivalence classes of 
 
 ---
 
-## 📌 Step-by-Step Reasoning
+##  Step-by-Step Reasoning
 
 1. **Initialize DSU** for all 26 lowercase letters.
 2. **Process all `==` equations**:
@@ -43,7 +43,7 @@ This leverages **DSU (Union-Find)** to efficiently track equivalence classes of 
 
 ---
 
-## 📌 Pseudocode
+##  Pseudocode
 
 ```
 function equationsPossible(equations):
@@ -69,7 +69,7 @@ function equationsPossible(equations):
 
 ---
 
-## 📌 Complexity Analysis
+##  Complexity Analysis
 
 | Operation          | Complexity                             |
 | ------------------ | -------------------------------------- |
@@ -83,7 +83,7 @@ function equationsPossible(equations):
 
 ---
 
-## 📌 ASCII Visualization
+##  ASCII Visualization
 
 ```
 Equations: ["a==b", "b==c", "a!=c"]
@@ -98,7 +98,7 @@ a!=c => a and c are in same set {a,b,c} => Contradiction
 
 ---
 
-## 📌 Variations & Edge Cases
+##  Variations & Edge Cases
 
 * **Multiple disconnected sets:** DSU handles them naturally.
 * **Self-contradictory equations:** e.g., `"a!=a"` → always false.
@@ -107,7 +107,7 @@ a!=c => a and c are in same set {a,b,c} => Contradiction
 
 ---
 
-## 📌 Interview Tips
+##  Interview Tips
 
 * Two-pass approach: **first `==`, then `!=`** is crucial.
 * Efficient DSU implementation with **path compression** and **union by rank** ensures O(E) time.
@@ -115,7 +115,7 @@ a!=c => a and c are in same set {a,b,c} => Contradiction
 
 ---
 
-## 📌 Practice Problems
+##  Practice Problems
 
 * [LeetCode 990 – Satisfiability of Equality Equations](https://leetcode.com/problems/satisfiability-of-equality-equations/)
 * [GFG – Equations Possible](https://www.geeksforgeeks.org/check-whether-equality-expressions-possible/)
@@ -123,6 +123,6 @@ a!=c => a and c are in same set {a,b,c} => Contradiction
 
 ---
 
-✅ **Summary:**
+ **Summary:**
 This problem demonstrates how **Disjoint Set (Union-Find)** can efficiently solve **equivalence and constraint satisfaction problems**, making it an essential tool in both competitive programming and real-world graph/logic applications.
 

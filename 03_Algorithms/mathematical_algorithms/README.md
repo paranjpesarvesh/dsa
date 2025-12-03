@@ -17,7 +17,7 @@ This directory collects the most important mathematical tools you will ever use 
 
 # **1. Topics Covered**
 
-### **✓ Number Theory Fundamentals**
+### ** Number Theory Fundamentals**
 
 * Divisibility
 * Primes & composite numbers
@@ -27,27 +27,27 @@ This directory collects the most important mathematical tools you will ever use 
 * Totient function
 * CRT (Chinese Remainder Theorem)
 
-### **✓ Fast Arithmetic**
+### ** Fast Arithmetic**
 
 * Modular exponentiation
 * Fast power (binary exponentiation)
 * Fast multiplication (FFT)
 * Big integer tricks
 
-### **✓ Prime-Testing & Factorization**
+### ** Prime-Testing & Factorization**
 
 * Sieve of Eratosthenes
 * Segmented sieve
 * Miller–Rabin primality
 * Pollard Rho (advanced)
 
-### **✓ Recurrences & Matrices**
+### ** Recurrences & Matrices**
 
 * Matrix exponentiation
 * Linear recurrence solutions
 * Fibonacci in log(n)
 
-### **✓ Combinatorics**
+### ** Combinatorics**
 
 * nCr modulo prime
 * Factorial precomputation
@@ -85,7 +85,7 @@ Number Theory
  ├── chinese_remainder_theorem (future)
  │
 Primes
- ├── sieve_of_erastothenes
+  ├── sieve_of_eratosthenes
  ├── miller_rabin_primality
  ├── pollard_rho (future)
  │
@@ -152,7 +152,7 @@ Compute the k-th term of a recurrence in O(log n).
 
 * modular_exponentiation
 * gcd_lcm
-* sieve_of_erastothenes
+* sieve_of_eratosthenes
 
 ### **Then learn**
 

@@ -46,7 +46,7 @@ Window sums:
 [1,5,1] = 7
 [5,1,3] = 9
 [1,3,2] = 6
-````
+```
 
 ### 3.2 Dynamic-size Window
 

@@ -1,4 +1,4 @@
-## 🔹 Introduction
+##  Introduction
 The **Disjoint Set Union (DSU)**, also known as **Union-Find** or **Merge-Find Set**, is a powerful data structure that efficiently supports two main operations:
 1. **Find** → Determine the set (or representative) to which an element belongs.
 2. **Union** → Merge two sets together.
@@ -11,7 +11,7 @@ It is widely used in:
 
 ---
 
-## 🔹 Core Idea
+##  Core Idea
 The data structure represents disjoint sets as **trees**:
 - Each set has a **representative (parent)**.
 - Initially, every element is its own parent.
@@ -28,7 +28,7 @@ Union(2,3): {1,2,3}, {4}
 
 ---
 
-## 🔹 Mathematical Intuition
+##  Mathematical Intuition
 Let there be `n` elements:
 - A naive `find` and `union` takes **O(n)** in the worst case (if the tree degenerates into a chain).
 - With **Union by Rank/Size** and **Path Compression**:
@@ -39,9 +39,9 @@ Let there be `n` elements:
 
 ---
 
-## 🔹 Operations
+##  Operations
 
-### 1️⃣ **Find(x)**
+### 1⃣ **Find(x)**
 Determines the root (representative) of the set containing `x`.
 
 ```
@@ -55,7 +55,7 @@ return Find(parent\[x])
 
 ---
 
-### 2️⃣ **Union(x, y)**
+### 2⃣ **Union(x, y)**
 Merges sets containing `x` and `y`.
 
 ```
@@ -69,7 +69,7 @@ parent\[rootX] = rootY
 
 ---
 
-## 🔹 Optimizations
+##  Optimizations
 
 ###  Union by Rank
 - Each root stores a "rank" (approximate tree height).
@@ -94,7 +94,7 @@ return parent\[x]
 
 ---
 
-## 🔹 Visual Illustration
+##  Visual Illustration
 
 ### Without Path Compression
 ```
@@ -115,11 +115,11 @@ Find(5) traverses entire chain
 └── 5
 Find(5) goes directly to 1
 
-````
+```
 
 ---
 
-## 🔹 Pseudocode (Optimized DSU)
+##  Pseudocode (Optimized DSU)
 
 ```text
 function MakeSet(n):
@@ -146,11 +146,11 @@ function Union(x, y):
     else:
         parent[rootY] = rootX
         rank[rootX] += 1
-````
+```
 
 ---
 
-## 🔹 Complexity Analysis
+##  Complexity Analysis
 
 | Operation | Naive | With Rank | With Rank + Path Compression |
 | --------- | ----- | --------- | ---------------------------- |
@@ -159,7 +159,7 @@ function Union(x, y):
 
 ---
 
-## 🔹 Variations
+##  Variations
 
 * **Union by Size** (instead of rank).
 * **DSU with Rollback** (for persistent data structures).
@@ -169,7 +169,7 @@ function Union(x, y):
 
 ---
 
-## 🔹 Interview Tips
+##  Interview Tips
 
 * FAANG interviews often test DSU in **graph-based problems**:
 
@@ -181,7 +181,7 @@ function Union(x, y):
 
 ---
 
-## 🔹 Practice Problems
+##  Practice Problems
 
 * [LeetCode 547: Number of Provinces](https://leetcode.com/problems/number-of-provinces/)
 * [LeetCode 684: Redundant Connection](https://leetcode.com/problems/redundant-connection/)
@@ -191,7 +191,7 @@ function Union(x, y):
 
 ---
 
-✅ **Summary**:
+ **Summary**:
 Disjoint Set (Union-Find) is one of the **most efficient structures** for partitioning data into groups. With **Union by Rank** and **Path Compression**, it achieves near-constant-time operations, making it indispensable in graph theory and interview preparation.
 
 ---

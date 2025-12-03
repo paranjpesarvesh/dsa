@@ -1,10 +1,10 @@
-# 🌐 Bloom Filters in Networking
+#  Bloom Filters in Networking
 
-## 1. 🚀 Introduction
+## 1.  Introduction
 
 Networking systems must handle **high throughput** and **low latency** operations while processing massive amounts of data (packets, routes, connections).
 
-👉 Bloom Filters are a **probabilistic data structure** that helps:
+ Bloom Filters are a **probabilistic data structure** that helps:
 
 * **Reduce memory footprint** in routers and caches.
 * **Speed up lookups** for IPs, URLs, flows, or routes.
@@ -12,17 +12,17 @@ Networking systems must handle **high throughput** and **low latency** operation
 
 ---
 
-## 2. 📊 Why Use Bloom Filters in Networking?
+## 2.  Why Use Bloom Filters in Networking?
 
 * Networks must decide *fast* → "Is this element (IP, flow, URL) already known?"
 * Storing everything explicitly (hash tables, lists) = too expensive.
 * Bloom Filters provide **constant-time lookups** with **minimal memory**.
 
-⚖️ Trade-off: Possible **false positives**, but **no false negatives** → safe for skipping unnecessary work.
+ Trade-off: Possible **false positives**, but **no false negatives** → safe for skipping unnecessary work.
 
 ---
 
-## 3. 🌍 Applications in Networking
+## 3.  Applications in Networking
 
 ### 3.1 Router Forwarding Tables
 
@@ -36,7 +36,7 @@ Packet -> Bloom Filter -> (Not in FIB) → Drop
               (Maybe in FIB) → Expensive Lookup
 ```
 
-✅ Reduces expensive hardware lookups.
+ Reduces expensive hardware lookups.
 
 ---
 
@@ -46,7 +46,7 @@ Packet -> Bloom Filter -> (Not in FIB) → Drop
 * Instead of sending the full list → send a **Bloom Filter**.
 * Peers can query Bloom Filters before requesting.
 
-👉 Saves **bandwidth** in distributed systems.
+ Saves **bandwidth** in distributed systems.
 
 ---
 
@@ -59,7 +59,7 @@ Packet -> Bloom Filter -> (Not in FIB) → Drop
   * If **not in filter** → forward to origin server.
   * If **maybe in filter** → check cache store.
 
-✅ Saves cache lookup time and reduces **unnecessary I/O**.
+ Saves cache lookup time and reduces **unnecessary I/O**.
 
 ---
 
@@ -68,7 +68,7 @@ Packet -> Bloom Filter -> (Not in FIB) → Drop
 * Used to **detect malicious IPs/domains** from blacklists.
 * Instead of searching the entire blacklist → Bloom Filters provide fast membership tests.
 
-⚡ E.g., detect packets from known botnets/spam IPs in O(k).
+ E.g., detect packets from known botnets/spam IPs in O(k).
 
 ---
 
@@ -79,7 +79,7 @@ Packet -> Bloom Filter -> (Not in FIB) → Drop
 
 ---
 
-## 4. 🔢 Mathematical Intuition
+## 4.  Mathematical Intuition
 
 If:
 
@@ -93,20 +93,20 @@ The **false positive probability (FPP)** is approximately:
 FPP ≈ (1 - e^(-kn/m))^k
 ```
 
-👉 Networking engineers choose `m` and `k` to balance:
+ Networking engineers choose `m` and `k` to balance:
 
 * Low memory usage (small `m`)
 * Acceptable false positive rate (`<1%` typically)
 
 ---
 
-## 5. ⚖️ Complexity Analysis
+## 5.  Complexity Analysis
 
 * **Insert**: O(k) hash computations.
 * **Query**: O(k).
 * **Memory**: O(m) bits (much smaller than hash tables).
 
-💡 In networking → huge savings since routers process **millions of packets per second**.
+ In networking → huge savings since routers process **millions of packets per second**.
 
 ---
 
@@ -126,7 +126,7 @@ In FAANG/system design interviews:
 
 ---
 
-## 7. 📚 Practice Problems
+## 7.  Practice Problems
 
 * [GFG – Applications of Bloom Filters](https://www.geeksforgeeks.org/applications-of-bloom-filters/)
 * [LeetCode 1346 – Check If N and Its Double Exist](https://leetcode.com/problems/check-if-n-and-its-double-exist/) (can be optimized with Bloom Filter idea).
@@ -134,7 +134,7 @@ In FAANG/system design interviews:
 
 ---
 
-## 8. 📖 References
+## 8.  References
 
 * Broder & Mitzenmacher, *Network Applications of Bloom Filters: A Survey* (2002).
 * [Cassandra Bloom Filters in Networking](https://cassandra.apache.org/doc/latest/architecture/storage_engine.html#bloom-filters)

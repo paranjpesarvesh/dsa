@@ -1,8 +1,8 @@
-# 📊 Complexity Analysis – README
+#  Complexity Analysis – README
 
 ---
 
-## 🔹 Overview
+##  Overview
 
 Complexity analysis is the foundation of **Data Structures & Algorithms (DSA)**.
 It helps us measure the **efficiency** of algorithms in terms of:
@@ -14,7 +14,7 @@ Mastering this is essential for **coding interviews, competitive programming, an
 
 ---
 
-## 🔹 Why Complexity Analysis?
+##  Why Complexity Analysis?
 
 * To **compare algorithms** independent of hardware/software.
 * To **predict scalability** as input grows.
@@ -29,7 +29,7 @@ For large inputs, `O(n log n)` is significantly better.
 
 ---
 
-## 🔹 Key Topics Covered
+##  Key Topics Covered
 
 This subdirectory contains theory, worked examples, and cheatsheets for analyzing algorithm efficiency.
 
@@ -39,7 +39,7 @@ complexity_analysis/
 │── notation_cheatsheet.md   # Big-O, Theta, Omega notations
 │── time_complexity.md       # Analyzing runtime growth
 │── space_complexity.md      # Memory usage breakdown
-│── recursive_analysis.md    # Recurrence relations, master theorem
+│── recursion_analysis.md    # Recurrence relations, master theorem
 │── amortized_analysis.md    # Amortized cost for operations
 │── worked_examples/
 │    ├── example_01_sum_of_array.md
@@ -51,7 +51,7 @@ complexity_analysis/
 
 ---
 
-## 🔹 Core Concepts
+##  Core Concepts
 
 ### 1. **Asymptotic Notation**
 
@@ -79,7 +79,7 @@ complexity_analysis/
 
 ---
 
-## 🔹 Visual Map
+##  Visual Map
 
 ```
                    +----------------------+
@@ -96,7 +96,7 @@ complexity_analysis/
 
 ---
 
-## 🔹 Interview Tips
+##  Interview Tips
 
 * Always mention **best, worst, and average cases**.
 * Be prepared to **derive complexity step-by-step**.
@@ -107,16 +107,16 @@ complexity_analysis/
 
 ---
 
-## 🔹 Practice Resources
+##  Practice Resources
 
-* 📘 \[CLRS – Introduction to Algorithms, Ch. 2 & 3]
+*  \[CLRS – Introduction to Algorithms, Ch. 2 & 3]
 * [GeeksforGeeks – Analysis of Algorithms](https://www.geeksforgeeks.org/analysis-of-algorithms-set-2-asymptotic-analysis/)
 * [LeetCode – Algorithm Complexity discussions](https://leetcode.com/)
 * [Codeforces – Time Limit Problems](https://codeforces.com/)
 
 ---
 
-✅ **Key Takeaway:**
+ **Key Takeaway:**
 Complexity analysis allows you to **predict performance before coding**, saving time and guiding optimal solutions.
 
 ---

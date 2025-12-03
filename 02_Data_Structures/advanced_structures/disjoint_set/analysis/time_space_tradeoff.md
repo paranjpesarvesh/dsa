@@ -1,8 +1,8 @@
-# ⏱️ Time-Space Tradeoff in Disjoint Set (Union-Find)
+# ⏱ Time-Space Tradeoff in Disjoint Set (Union-Find)
 
 ---
 
-## 📌 Introduction
+##  Introduction
 
 The **Disjoint Set Union (DSU)**, also known as **Union-Find**, is one of the most efficient data structures for solving **dynamic connectivity problems**.
 Its efficiency comes from a clever balance between **time and space** optimizations.
@@ -11,7 +11,7 @@ This document explores how different DSU implementations trade off **time comple
 
 ---
 
-## 📌 The Core Operations
+##  The Core Operations
 
 A **DSU** supports two main operations:
 
@@ -20,7 +20,7 @@ A **DSU** supports two main operations:
 
 ---
 
-## 📌 Naive DSU vs Optimized DSU
+##  Naive DSU vs Optimized DSU
 
 ### 1. **Naive DSU (No Optimizations)**
 
@@ -32,7 +32,7 @@ A **DSU** supports two main operations:
 | Find      | `O(N)`          | `O(N)`           |
 | Union     | `O(N)`          | `O(N)`           |
 
-❌ Extremely inefficient for large datasets, since trees can become skewed.
+ Extremely inefficient for large datasets, since trees can become skewed.
 
 ---
 
@@ -46,7 +46,7 @@ A **DSU** supports two main operations:
 | Find      | `O(log N)`      | `O(N)`           |
 | Union     | `O(log N)`      | `O(N)`           |
 
-✅ Space usage remains linear, but time improves significantly.
+ Space usage remains linear, but time improves significantly.
 
 ---
 
@@ -60,9 +60,9 @@ A **DSU** supports two main operations:
 | Find      | `O(α(N))`      | `O(N)`           |
 | Union     | `O(α(N))`      | `O(N)`           |
 
-👉 `α(N)` = inverse Ackermann function (≤ 4 for all real-world inputs).
+ `α(N)` = inverse Ackermann function (≤ 4 for all real-world inputs).
 
-✅ Near-constant time operations with only `O(N)` space.
+ Near-constant time operations with only `O(N)` space.
 
 ---
 
@@ -78,11 +78,11 @@ This is the **most widely used version**:
 | Find      | `O(α(N))`      | `O(N)`           |
 | Union     | `O(α(N))`      | `O(N)`           |
 
-⚡ Best tradeoff between **time efficiency** and **space usage**.
+ Best tradeoff between **time efficiency** and **space usage**.
 
 ---
 
-## 📌 Visualizing the Tradeoff
+##  Visualizing the Tradeoff
 
 ### Without Path Compression
 
@@ -109,7 +109,7 @@ Height = O(1)
 
 ---
 
-## 📌 Space vs Time: What We Trade
+##  Space vs Time: What We Trade
 
 * **Space Cost:**
 
@@ -121,7 +121,7 @@ Height = O(1)
 
 ---
 
-## 📌 Mathematical Intuition
+##  Mathematical Intuition
 
 * **Rank-based union:** Height `≤ log N`.
 * **Path compression:** Almost flattens the tree → `α(N)` bound.
@@ -133,7 +133,7 @@ So in practice, **DSU behaves like O(1) per operation**.
 
 ---
 
-## 📌 Interview Tips
+##  Interview Tips
 
 * Always **mention both optimizations** (Rank + Path Compression).
 * Be prepared to explain **why `α(N)` is “constant enough”**.
@@ -145,7 +145,7 @@ So in practice, **DSU behaves like O(1) per operation**.
 
 ---
 
-## 📌 Practice Problems
+##  Practice Problems
 
 * [LeetCode 128 – Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/)
 * [LeetCode 547 – Number of Provinces](https://leetcode.com/problems/number-of-provinces/)

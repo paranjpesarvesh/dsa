@@ -1,13 +1,13 @@
 # Cycle Detection in Graphs using Disjoint Set (Union-Find)
 
-## 🔹 Introduction
+##  Introduction
 
 Cycle detection is a fundamental problem in graph theory.
 For **undirected graphs**, the **Disjoint Set Union (DSU)**, also known as **Union-Find**, provides an efficient way to detect cycles.
 
 ---
 
-## 🔹 Key Idea
+##  Key Idea
 
 * Each vertex belongs to a **set** representing its connected component.
 * When processing an edge `(u, v)`:
@@ -17,7 +17,7 @@ For **undirected graphs**, the **Disjoint Set Union (DSU)**, also known as **Uni
 
 ---
 
-## 🔹 Mathematical Intuition
+##  Mathematical Intuition
 
 We maintain equivalence classes of vertices:
 
@@ -32,7 +32,7 @@ $$
 
 ---
 
-## 🔹 Algorithm (Step-by-Step)
+##  Algorithm (Step-by-Step)
 
 1. Initialize DSU with all vertices as their own parent.
 2. For each edge `(u, v)`:
@@ -44,7 +44,7 @@ $$
 
 ---
 
-## 🔹 Pseudocode
+##  Pseudocode
 
 ```
 function detectCycle(edges, n):
@@ -61,7 +61,7 @@ function detectCycle(edges, n):
 
 ---
 
-## 🔹 Complexity Analysis
+##  Complexity Analysis
 
 * **Find / Union** (with path compression + union by rank): `O(α(n))` ≈ constant.
 * **Overall** for `E` edges and `V` vertices:
@@ -72,7 +72,7 @@ function detectCycle(edges, n):
 
 ---
 
-## 🔹 Visual Example
+##  Visual Example
 
 Graph edges: `(0-1), (1-2), (2-0)`
 
@@ -88,7 +88,7 @@ Graph edges: `(0-1), (1-2), (2-0)`
 
 ---
 
-## 🔹 Variations & Edge Cases
+##  Variations & Edge Cases
 
 * **Directed graphs** → use DFS or Kahn’s Algorithm instead.
 * **Multiple edges** → self-loops or parallel edges may directly form cycles.
@@ -96,7 +96,7 @@ Graph edges: `(0-1), (1-2), (2-0)`
 
 ---
 
-## 🔹 Interview Tips
+##  Interview Tips
 
 * Commonly asked in **FAANG** interviews with Kruskal’s MST.
 * Be ready to discuss optimizations: **path compression** and **union by rank/size**.
@@ -104,7 +104,7 @@ Graph edges: `(0-1), (1-2), (2-0)`
 
 ---
 
-## 🔹 Practice Problems
+##  Practice Problems
 
 * [GFG: Detect cycle in an undirected graph](https://practice.geeksforgeeks.org/problems/detect-cycle-in-an-undirected-graph/1)
 * [LeetCode 684: Redundant Connection](https://leetcode.com/problems/redundant-connection/)

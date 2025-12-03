@@ -1,11 +1,11 @@
-# 🔄 Recursion Patterns Cheatsheet
+#  Recursion Patterns Cheatsheet
 
 Recursion is a **fundamental paradigm** in DSA. Many problems are simplified by **breaking them down into smaller subproblems** that mirror the original structure.
 This cheatsheet highlights **recursion patterns**, their **intuitions**, **pseudocode templates**, and **common pitfalls**.
 
 ---
 
-## 📌 1. Basic Recursive Pattern
+##  1. Basic Recursive Pattern
 
 ### Idea
 
@@ -35,7 +35,7 @@ def factorial(n):
 
 ---
 
-## 📌 2. Tail Recursion
+##  2. Tail Recursion
 
 ### Idea
 
@@ -49,11 +49,11 @@ def tail_factorial(n, acc=1):
     return tail_factorial(n-1, acc*n)
 ```
 
-⚠️ In Python, prefer **iteration** for tail recursion due to recursion depth limits.
+ In Python, prefer **iteration** for tail recursion due to recursion depth limits.
 
 ---
 
-## 📌 3. Divide & Conquer
+##  3. Divide & Conquer
 
 ### Idea
 
@@ -84,7 +84,7 @@ def merge_sort(arr):
 
 ---
 
-## 📌 4. Recursion with Backtracking
+##  4. Recursion with Backtracking
 
 ### Idea
 
@@ -119,7 +119,7 @@ def solve_nqueens(board, row):
 
 ---
 
-## 📌 5. Recursion with Memoization (Top-Down DP)
+##  5. Recursion with Memoization (Top-Down DP)
 
 ### Idea
 
@@ -137,7 +137,7 @@ def fib(n):
 
 ---
 
-## 📌 6. Multiple Recursions (Tree Recursion)
+##  6. Multiple Recursions (Tree Recursion)
 
 ### Idea
 
@@ -164,7 +164,7 @@ fib(1) fib(0)
 
 ---
 
-## 📌 7. Hybrid Recursion + Iteration
+##  7. Hybrid Recursion + Iteration
 
 Some problems require **recursive decomposition** but **iterative processing** of results.
 
@@ -181,7 +181,7 @@ def flatten(lst):
 
 ---
 
-## 📌 8. Complexity Analysis of Recursion
+##  8. Complexity Analysis of Recursion
 
 ### General Method
 
@@ -197,23 +197,23 @@ def flatten(lst):
 
 ---
 
-## 📌 9. Common Pitfalls
+##  9. Common Pitfalls
 
-* ❌ Missing base case → infinite recursion, stack overflow.
-* ❌ Overlapping subproblems → exponential time (fix with memoization).
-* ❌ Large depth in Python → use iteration or `sys.setrecursionlimit()` carefully.
-
----
-
-## 📌 10. Interview Tips
-
-* 🚀 **FAANG** → Expect backtracking, DFS (tree/graph), recursive DP.
-* 📝 **GATE** → Focus on recurrence relations & complexity analysis.
-* ⚡ Always state **recurrence equation** in interviews before solving.
+*  Missing base case → infinite recursion, stack overflow.
+*  Overlapping subproblems → exponential time (fix with memoization).
+*  Large depth in Python → use iteration or `sys.setrecursionlimit()` carefully.
 
 ---
 
-## 📌 11. Practice Problems
+##  10. Interview Tips
+
+*  **FAANG** → Expect backtracking, DFS (tree/graph), recursive DP.
+*  **GATE** → Focus on recurrence relations & complexity analysis.
+*  Always state **recurrence equation** in interviews before solving.
+
+---
+
+##  11. Practice Problems
 
 * **LeetCode 46** – Permutations
 * **LeetCode 51** – N-Queens
