@@ -9,22 +9,12 @@ This repository is organized to help you systematically learn DSA, implement sol
 
 ```
 
-  00\_prompt
   01\_Fundamentals
   02\_Data\_Structures
   03\_Algorithms
   04\_Problem\_Patterns
 
 ```
-
----
-
-### 00_prompt
-Contains **prompts, instructions, and notes** for using this repository.
-- Example contents:
-  - How to navigate the repo
-  - Coding standards and guidelines
-  - Best practices for DSA study
 
 ---
 
